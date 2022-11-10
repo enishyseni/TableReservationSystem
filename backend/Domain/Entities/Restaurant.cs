@@ -2,7 +2,7 @@ using System;
 
 namespace Domain
 {
-    public class Rrestaurant : Base
+    public class Restaurant : Base
     {
         public string Location { get; set; }
 
