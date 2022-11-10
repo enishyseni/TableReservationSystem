@@ -1,12 +1,7 @@
-
-
 namespace Domain
 {
-
-
-    public class User
+    public class User : Base
     {
-
         public string LastName { get; set; }
 
         public int PhoneNumber { get; set; }
@@ -14,7 +9,5 @@ namespace Domain
         public string Email { get; set; }
 
         public int Age { get; set; }
-
-
     }
 }
