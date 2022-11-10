@@ -17,7 +17,6 @@ root.render(
   <Router>
         <React.StrictMode>
             <Routes>
-              <Route path="/register" element={<Register />} />  
             </Routes>
             <App />
         </React.StrictMode>
