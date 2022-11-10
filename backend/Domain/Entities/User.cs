@@ -9,5 +9,7 @@ namespace Domain
         public string Email { get; set; }
 
         public int Age { get; set; }
+
+        public virtual ICollection<Restaurant> Restaurants { get; set; } = new List<Restaurant>();
     }
 }
