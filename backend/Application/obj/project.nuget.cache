@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h2Q8J99oyLEvDwvr/9wq37Kit4aVhVIFgsJNXZRGI2/yYvsjzE6LZeB4EWtrdOiT3NEQlKXYqU54ITpcG2Vbgg==",
+  "dgSpecHash": "Vda8jt5zD4dJxa7uDURNd/7IHtklYHeJBL/v+Bi5uVoB6NiyAM7IEAdQYcATbStacWm1HrCS4Pk9HtR6oEAMBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Razer\\TableReservationSystem\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,15 @@
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\bin\Debug\net6.0\Persistence.deps.json
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\bin\Debug\net6.0\Persistence.dll
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\bin\Debug\net6.0\Persistence.pdb
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\bin\Debug\net6.0\Domain.dll
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\bin\Debug\net6.0\Domain.pdb
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\Persistence.dll
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\Persistence.pdb
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net6.0\ref\Persistence.dll

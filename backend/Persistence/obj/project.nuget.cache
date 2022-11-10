@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "prAJx8BXr7R0qSBGw0AgYyIF+E76JgwEmCJtzw7khZ4UF8XPEJjh7xZixcsp/5G9+OFA7eN6ZPZLtcjnG1v2yg==",
+  "dgSpecHash": "9EQ96mbE+d03mTgdybQmsOUtn92B62MLgzS+CGXqKmjMBcte4SkLEVRB3SPzH1/N2VTF97Mk0CC4/U0qtBO1ZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Razer\\TableReservationSystem\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
