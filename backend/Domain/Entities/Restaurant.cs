@@ -8,7 +8,5 @@ namespace Domain{
         public string Location{get; set;}
         
         public string Type {get; set;}
-
-    
     }
 }
