@@ -1,7 +1,7 @@
 
 
 
-namespace Base{
+namespace Domain{
 
     public class Base{
 

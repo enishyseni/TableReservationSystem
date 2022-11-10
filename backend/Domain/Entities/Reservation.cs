@@ -1,6 +1,6 @@
 
 
-namespace Reservation{
+namespace Domain{
 
     public class Reservation{
 
