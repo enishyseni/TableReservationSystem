@@ -24,11 +24,11 @@ function Navbar() {
             </div>
             */}
             <div className="flex">
-                <button onClick={() => {history("/Register")}} className="font-poppins sm:hidden md:text-[12px] mr-4 text-black flex  items-center py-2 rounded-full">
+                <button onClick={() => {history("/Register")}} className="font-poppins hidden lg:block mr-4 text-black flex  items-center py-2 rounded-full">
                     Not registered?
                 </button>
 
-                <button onClick={() => {history("/Login")}} className="font-poppins custom-button bg-black text-white flex text-sm items-center py-2 rounded-full">
+                <button onClick={() => {history("/Login")}} className="font-poppins custom-button bg-black text-white flex text-sm items-center rounded-full">
                     <AiOutlineLogin size={20} className="mr-2"/>Login
                 </button>
             </div>
