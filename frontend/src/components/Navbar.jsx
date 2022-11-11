@@ -23,10 +23,15 @@ function Navbar() {
                 <input className="bg-transparent p-2 w-full focus:outline-none" type="text" placeholder="Search foods"/>
             </div>
             */}
+            <div className="flex">
+                <button onClick={() => {history("/Register")}} className="font-poppins sm:hidden md:text-[12px] mr-4 text-black flex  items-center py-2 rounded-full">
+                    Not registered?
+                </button>
 
-            <button onClick={() => {history("/Login")}} className="custom-button bg-black text-white flex  items-center py-2 rounded-full">
-                <AiOutlineLogin size={20} className="mr-2"/>Login
-            </button>
+                <button onClick={() => {history("/Login")}} className="font-poppins custom-button bg-black text-white flex text-sm items-center py-2 rounded-full">
+                    <AiOutlineLogin size={20} className="mr-2"/>Login
+                </button>
+            </div>
 
             {/*Side drawer menu */}
             <div className= {nav ? 'fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300' : 'fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300'}>
