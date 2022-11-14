@@ -3490,8 +3490,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
+            "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
             },
             "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
               "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj"
