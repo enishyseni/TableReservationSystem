@@ -1,8 +1,12 @@
 using System.Collections.Generic;
 using Application.Activites;
+using Application.Core;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
+using AutoMapper;
+
+
 
 
 
@@ -22,6 +26,8 @@ builder.Services.AddDbContext<Persistence.DataContext>(opt =>
 });
 
  builder.Services.AddMediatR(typeof(List.Handler).Assembly);
+ builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
+
 
 
 

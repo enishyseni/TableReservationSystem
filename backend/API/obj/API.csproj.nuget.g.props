@@ -19,6 +19,8 @@
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\7.0.0\build\net6.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\7.0.0\build\net6.0\Microsoft.EntityFrameworkCore.Design.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgnetfx-System_Collections_Generic_DictionaryGetOrAdd Condition=" '$(Pkgnetfx-System_Collections_Generic_DictionaryGetOrAdd)' == '' ">C:\Users\Administrator\.nuget\packages\netfx-system.collections.generic.dictionarygetoradd\1.1.0</Pkgnetfx-System_Collections_Generic_DictionaryGetOrAdd>
+    <Pkgnetfx-System_AppDomainData Condition=" '$(Pkgnetfx-System_AppDomainData)' == '' ">C:\Users\Administrator\.nuget\packages\netfx-system.appdomaindata\1.1.0</Pkgnetfx-System_AppDomainData>
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\Administrator\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
   </PropertyGroup>
 </Project>

@@ -36,6 +36,22 @@ namespace API.Controllers
             return Ok(await Mediator.Send(new Create.Command{Reservation =reservation}));
 
          }
+         [HttpPut("{id}")]
+
+         public async Task<IActionResult>EditReservation(Guid id, Reservation reservation)
+         {
+            reservation.Id= id;
+            return Ok(await Mediator.Send(new Edit.Command{Reservation =reservation}));
+
+         }
+         [HttpDelete("{id}")]
+
+         public async Task<IActionResult> DeleteReservation(Guid id)
+         {
+            return Ok(await Mediator.Send(new Delete.Command{Id=id}));
+            
+
+         }
 
       
 
