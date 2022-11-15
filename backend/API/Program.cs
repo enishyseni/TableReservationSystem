@@ -1,5 +1,8 @@
+using Application;
 using Microsoft.EntityFrameworkCore;
-using Presistence;
+using Persistence;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,12 +13,31 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<DataContext>(opt =>
+
+builder.Services.AddDbContext<Presistence.DataContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddMediatR(AppDomain.CurrentDomain.Load("Application"));
+
+
+
+  
+ 
+
 var app = builder.Build();
+
+var scopeFactory = app.Services.GetRequiredService<IServiceProvider>();
+
+using (var scope = scopeFactory.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<Presistence.DataContext>();
+    context.Database.Migrate();
+    await Seed.SeedData(context);
+}
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
