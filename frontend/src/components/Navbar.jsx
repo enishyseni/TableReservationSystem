@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import {useNavigate} from "react-router-dom";
-import {AiOutlineMenu, AiOutlineSearch, AiOutlineLogin, AiOutlineClose, AiFillTag} from 'react-icons/ai';
+import {AiOutlineLogin, AiOutlineClose} from 'react-icons/ai';
 
 
 function Navbar() {
     const history = useNavigate();
-    history('/Login');
+   
     const [nav, setNav] = useState(false);
     return (
         <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
@@ -24,11 +24,11 @@ function Navbar() {
             </div>
             */}
             <div className="flex">
-                <button onClick={() => {history("/Register")}} className="font-poppins hidden lg:block mr-4 text-black flex  items-center py-2 rounded-full">
+                {/* <button onClick={() => {history("register")}} className="font-poppins hidden lg:block mr-4 text-black flex  items-center py-2 rounded-full">
                     Not registered?
-                </button>
+                </button> */}
 
-                <button onClick={() => {history("/Login")}} className="font-poppins custom-button bg-black text-white flex text-sm items-center rounded-full">
+                <button onClick={() => history("login")} className="font-poppins custom-button bg-black text-white flex text-sm items-center rounded-full">
                     <AiOutlineLogin size={20} className="mr-2"/>Login
                 </button>
             </div>
