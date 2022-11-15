@@ -12,6 +12,16 @@ namespace Presistence
             {
 
             }
+
+         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+        optionsBuilder
+        .UseSqlServer(
+            "DefaultConnection",
+            options => options.EnableRetryOnFailure());
+    }
+
+        
         
         public DbSet<Reservation>Reservations{get; set;}
 
@@ -25,5 +35,6 @@ namespace Presistence
         
 
 
-    }
+     }
+
 }

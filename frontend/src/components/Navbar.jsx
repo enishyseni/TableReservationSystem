@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import {useNavigate} from "react-router-dom";
-import {AiOutlineMenu, AiOutlineSearch, AiOutlineLogin, AiOutlineClose, AiFillTag} from 'react-icons/ai';
+import {AiOutlineLogin, AiOutlineClose} from 'react-icons/ai';
 
 
 function Navbar() {
     const history = useNavigate();
-    history('/Login');
+   
     const [nav, setNav] = useState(false);
     return (
         <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
@@ -23,10 +23,15 @@ function Navbar() {
                 <input className="bg-transparent p-2 w-full focus:outline-none" type="text" placeholder="Search foods"/>
             </div>
             */}
+            <div className="flex">
+                {/* <button onClick={() => {history("register")}} className="font-poppins hidden lg:block mr-4 text-black flex  items-center py-2 rounded-full">
+                    Not registered?
+                </button> */}
 
-            <button onClick={() => {history("/Login")}} className="custom-button bg-black text-white flex  items-center py-2 rounded-full">
-                <AiOutlineLogin size={20} className="mr-2"/>Login
-            </button>
+                <button onClick={() => history("login")} className="font-poppins custom-button bg-black text-white flex text-sm items-center rounded-full">
+                    <AiOutlineLogin size={20} className="mr-2"/>Login
+                </button>
+            </div>
 
             {/*Side drawer menu */}
             <div className= {nav ? 'fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300' : 'fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300'}>
