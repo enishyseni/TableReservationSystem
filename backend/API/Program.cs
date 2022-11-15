@@ -1,4 +1,5 @@
-using static System.Net.Mime.MediaTypeNames.Application;
+using System.Collections.Generic;
+
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
@@ -20,8 +21,12 @@ builder.Services.AddDbContext<Persistence.DataContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-builder.Services.AddMediatR(AppDomain.CurrentDomain.Load("Application"));
+ builder.Services.AddMediatR(typeof(List.Handler).Assembly);
 
+
+
+  
+ 
 
 var app = builder.Build();
 
