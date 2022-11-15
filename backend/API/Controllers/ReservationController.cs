@@ -1,36 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
 using Domain;
-using System.Collections.Generic;
-using Application.Activites;
+using MediatR;
 
 namespace API.Controllers
 {
     public class ReservationController : BaseApiController
 
     {
-      
-        // private readonly IMediator _mediator;
-        // public ReservationController(IMediator mediator)
-        // {
-        
-        // }
 
-        [HttpGet]
-
-        public async Task<ActionResult<List<Reservation>>>GetReservation()
+        private readonly IMediator _mediator;
+        public ReservationController()
         {
-            return await Mediator.Send(new List.Query());
+
+
+        }
+        
+        [HttpGet]
+        public async Task<ActionResult<List<Reservation>>> GetReservation()
+        {
+            return await _mediator.Send(new List.Query());
         }
         [HttpGet("{id}")]
 
-         public async Task<ActionResult<Reservation>>GetReservation(Guid id)
-         {
-              return await Mediator.Send(new Details.Query{Id = id});
-         }
-
-      
-
+        public async Task<ActionResult<Reservation>> GetReservation(Guid id)
+        {
+            return Ok();
+        }
     }
-
-
 }
