@@ -693,6 +693,12 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "netfx-System.AppDomainData/1.1.0": {
+        "type": "package"
+      },
+      "netfx-System.Collections.Generic.DictionaryGetOrAdd/1.1.0": {
+        "type": "package"
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1161,6 +1167,13 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "Tracer.SystemDiagnostics/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "netfx-System.AppDomainData": "1.1.0",
+          "netfx-System.Collections.Generic.DictionaryGetOrAdd": "1.1.0"
         }
       },
       "Domain/1.0.0": {
@@ -2180,6 +2193,34 @@
         "lib/netstandard2.0/Mono.TextTemplating.dll",
         "mono.texttemplating.2.2.1.nupkg.sha512",
         "mono.texttemplating.nuspec"
+      ]
+    },
+    "netfx-System.AppDomainData/1.1.0": {
+      "sha512": "6UhPY6ulLvvb8Gwm22JCQqDKmGzB9CtJpJDxty466ExJ8XWhPasSynvHNDwls/ldmGGIHlsxlFs0Z8+Jx+YG2g==",
+      "type": "package",
+      "path": "netfx-system.appdomaindata/1.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/netfx/System/AppDomainData.cs",
+        "netfx-system.appdomaindata.1.1.0.nupkg.sha512",
+        "netfx-system.appdomaindata.nuspec",
+        "tools/netfx-System.AppDomainData.xml"
+      ]
+    },
+    "netfx-System.Collections.Generic.DictionaryGetOrAdd/1.1.0": {
+      "sha512": "LLbMhIjYXoCcu45lar2aTiVU4uP55ECoNwXUQghTHTBL1nyRpLq/JePRCEs8ieGDwEMK4reC28wR55OjwRmFLQ==",
+      "type": "package",
+      "path": "netfx-system.collections.generic.dictionarygetoradd/1.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/netfx/System/Collections/Generic/DictionaryGetOrAdd.cs",
+        "netfx-system.collections.generic.dictionarygetoradd.1.1.0.nupkg.sha512",
+        "netfx-system.collections.generic.dictionarygetoradd.nuspec",
+        "tools/netfx-System.Collections.Generic.DictionaryGetOrAdd.xml"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -3529,6 +3570,21 @@
         "version.txt"
       ]
     },
+    "Tracer.SystemDiagnostics/1.2.1": {
+      "sha512": "z1kHYYaJRru/CLQTQBtRiG6UcjgzmTYuNKJ+sOFA1whMY941nE/9kZPtkXRwjoOMWT6aEw7Wwu8KIESHpw5b6w==",
+      "type": "package",
+      "path": "tracer.systemdiagnostics/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net35/External/Diagnostics/Tracer/SystemDiagnostics/StartActivityExtension.cs.pp",
+        "content/net35/External/Diagnostics/Tracer/SystemDiagnostics/TracerManager.cs.pp",
+        "content/net40/External/Diagnostics/Tracer/SystemDiagnostics/StartActivityExtension.cs.pp",
+        "content/net40/External/Diagnostics/Tracer/SystemDiagnostics/TracerManager.cs.pp",
+        "tracer.systemdiagnostics.1.2.1.nupkg.sha512",
+        "tracer.systemdiagnostics.nuspec"
+      ]
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -3546,23 +3602,25 @@
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
-      "Persistence >= 1.0.0"
+      "Persistence >= 1.0.0",
+      "Tracer.SystemDiagnostics >= 1.2.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Razer\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
+      "projectUniqueName": "c:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Razer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\obj\\",
+      "projectPath": "c:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Razer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3574,11 +3632,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
+            "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj"
+            "c:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
+              "projectPath": "c:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -3606,6 +3664,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Tracer.SystemDiagnostics": {
+            "target": "Package",
+            "version": "[1.2.1, )"
           }
         },
         "imports": [
