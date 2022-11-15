@@ -1,11 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Presistence;
-using System.Collections.Generic;
 using Domain;
-using Microsoft.EntityFrameworkCore;
-using Application;
-
-
+using System.Collections.Generic;
+using Application.Activites;
 
 namespace API.Controllers
 {
@@ -13,25 +9,23 @@ namespace API.Controllers
 
     {
       
-        private readonly IMediator _mediator;
-        public ReservationController()
-
-        {
-           
-
-        }
+        // private readonly IMediator _mediator;
+        // public ReservationController(IMediator mediator)
+        // {
+        
+        // }
 
         [HttpGet]
 
         public async Task<ActionResult<List<Reservation>>>GetReservation()
         {
-            return await _mediator.Send(new List.Query());
+            return await Mediator.Send(new List.Query());
         }
         [HttpGet("{id}")]
 
          public async Task<ActionResult<Reservation>>GetReservation(Guid id)
          {
-              return Ok();
+              return await Mediator.Send(new Details.Query{Id = id});
          }
 
       
