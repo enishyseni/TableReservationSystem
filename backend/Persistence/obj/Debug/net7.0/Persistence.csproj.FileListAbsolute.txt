@@ -15,3 +15,8 @@ C:\Users\Administrator\Documents\GitHub\TableReservationSystem\backend\Persisten
 C:\Users\Administrator\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net7.0\Persistence.pdb
 C:\Users\Administrator\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net7.0\Persistence.genruntimeconfig.cache
 C:\Users\Administrator\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net7.0\ref\Persistence.dll
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net7.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net7.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfo.cs
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Persistence\obj\Debug\net7.0\Persistence.csproj.CoreCompileInputs.cache

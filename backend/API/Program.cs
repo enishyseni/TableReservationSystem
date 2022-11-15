@@ -1,4 +1,5 @@
-using Application;
+using static System.Net.Mime.MediaTypeNames.Application;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -14,7 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-builder.Services.AddDbContext<Presistence.DataContext>(opt =>
+builder.Services.AddDbContext<Persistence.DataContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
@@ -22,17 +23,13 @@ builder.Services.AddDbContext<Presistence.DataContext>(opt =>
 builder.Services.AddMediatR(AppDomain.CurrentDomain.Load("Application"));
 
 
-
-  
- 
-
 var app = builder.Build();
 
 var scopeFactory = app.Services.GetRequiredService<IServiceProvider>();
 
 using (var scope = scopeFactory.CreateScope())
 {
-    var context = scope.ServiceProvider.GetRequiredService<Presistence.DataContext>();
+    var context = scope.ServiceProvider.GetRequiredService<Persistence.DataContext>();
     context.Database.Migrate();
     await Seed.SeedData(context);
 }

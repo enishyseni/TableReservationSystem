@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace Presistence
+namespace Persistence
 {
 
     public class DataContext : DbContext

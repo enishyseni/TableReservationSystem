@@ -1,15 +1,15 @@
 using Domain;
-using Presistence;
+using Persistence;
 
 namespace Persistence
 {
     public class Seed
     {
-         public static async Task SeedData(DataContext context)
-         
-         {
-            if(context.Reservations.Any())
-            return;
+        public static async Task SeedData(DataContext context)
+
+        {
+            if (context.Reservations.Any())
+                return;
 
             var reservations = new List<Reservation>
             {
@@ -23,7 +23,7 @@ namespace Persistence
                     Description ="dsaesasd",
 
 
-                    
+
                 },
                 new Reservation{
 
@@ -33,9 +33,9 @@ namespace Persistence
                     StartDateTime=  DateTime.Now.AddMonths(-2),
                     NumberOfPersons = 4,
                     Description ="dsaesasd",
-                    
 
-                    
+
+
                 }
 
 
@@ -45,8 +45,8 @@ namespace Persistence
             await context.SaveChangesAsync();
 
 
-            
-         }
-        
+
+        }
+
     }
 }
