@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Domain;
 using System.Collections.Generic;
 using Application.Activites;
+using Application.ReservationMediatRClasses;
 
 namespace API.Controllers
 {
@@ -30,7 +31,11 @@ namespace API.Controllers
 
          [HttpPost]
 
-         public async Tasl<IACtionResult>
+         public async Task<IActionResult>CreateReservation(Reservation reservation)
+         {
+            return Ok(await Mediator.Send(new Create.Command{Reservation =reservation}));
+
+         }
 
       
 
