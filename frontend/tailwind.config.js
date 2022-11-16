@@ -29,7 +29,9 @@ module.exports = {
         '35-r': '30rem'
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif']
+        'poppins': ['Poppins', 'sans-serif'], 
+        'sono': ['Sono', 'sans-serif']
+
       },
       boxShadow: {
         '5xl': '20px 20px 50px rgba (0, 0, 0, 0.5)',
