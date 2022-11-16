@@ -717,6 +717,12 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "netfx-System.AppDomainData/1.1.0": {
+        "type": "package"
+      },
+      "netfx-System.Collections.Generic.DictionaryGetOrAdd/1.1.0": {
+        "type": "package"
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -1250,6 +1256,13 @@
           }
         }
       },
+      "Tracer.SystemDiagnostics/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "netfx-System.AppDomainData": "1.1.0",
+          "netfx-System.Collections.Generic.DictionaryGetOrAdd": "1.1.0"
+        }
+      },
       "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1257,7 +1270,8 @@
           "Domain": "1.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",
-          "Persistence": "1.0.0"
+          "Persistence": "1.0.0",
+          "Tracer.SystemDiagnostics": "1.2.1"
         },
         "compile": {
           "bin/placeholder/Application.dll": {}
@@ -2531,6 +2545,34 @@
         "lib/netstandard2.0/Mono.TextTemplating.dll",
         "mono.texttemplating.2.2.1.nupkg.sha512",
         "mono.texttemplating.nuspec"
+      ]
+    },
+    "netfx-System.AppDomainData/1.1.0": {
+      "sha512": "6UhPY6ulLvvb8Gwm22JCQqDKmGzB9CtJpJDxty466ExJ8XWhPasSynvHNDwls/ldmGGIHlsxlFs0Z8+Jx+YG2g==",
+      "type": "package",
+      "path": "netfx-system.appdomaindata/1.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/netfx/System/AppDomainData.cs",
+        "netfx-system.appdomaindata.1.1.0.nupkg.sha512",
+        "netfx-system.appdomaindata.nuspec",
+        "tools/netfx-System.AppDomainData.xml"
+      ]
+    },
+    "netfx-System.Collections.Generic.DictionaryGetOrAdd/1.1.0": {
+      "sha512": "LLbMhIjYXoCcu45lar2aTiVU4uP55ECoNwXUQghTHTBL1nyRpLq/JePRCEs8ieGDwEMK4reC28wR55OjwRmFLQ==",
+      "type": "package",
+      "path": "netfx-system.collections.generic.dictionarygetoradd/1.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/netfx/System/Collections/Generic/DictionaryGetOrAdd.cs",
+        "netfx-system.collections.generic.dictionarygetoradd.1.1.0.nupkg.sha512",
+        "netfx-system.collections.generic.dictionarygetoradd.nuspec",
+        "tools/netfx-System.Collections.Generic.DictionaryGetOrAdd.xml"
       ]
     },
     "Swashbuckle.AspNetCore/6.4.0": {
@@ -3961,6 +4003,21 @@
         "version.txt"
       ]
     },
+    "Tracer.SystemDiagnostics/1.2.1": {
+      "sha512": "z1kHYYaJRru/CLQTQBtRiG6UcjgzmTYuNKJ+sOFA1whMY941nE/9kZPtkXRwjoOMWT6aEw7Wwu8KIESHpw5b6w==",
+      "type": "package",
+      "path": "tracer.systemdiagnostics/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net35/External/Diagnostics/Tracer/SystemDiagnostics/StartActivityExtension.cs.pp",
+        "content/net35/External/Diagnostics/Tracer/SystemDiagnostics/TracerManager.cs.pp",
+        "content/net40/External/Diagnostics/Tracer/SystemDiagnostics/StartActivityExtension.cs.pp",
+        "content/net40/External/Diagnostics/Tracer/SystemDiagnostics/TracerManager.cs.pp",
+        "tracer.systemdiagnostics.1.2.1.nupkg.sha512",
+        "tracer.systemdiagnostics.nuspec"
+      ]
+    },
     "Application/1.0.0": {
       "type": "project",
       "path": "../Application/Application.csproj",
@@ -3986,34 +4043,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\Razer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\obj\\",
+      "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Razer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Razer\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj"
+            "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj"
             }
           }
         }

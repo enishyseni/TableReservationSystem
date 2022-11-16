@@ -3,7 +3,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
-namespace Application.Activites
+namespace Application.ReservationMediatRClasses
 {
     public class List
     {
