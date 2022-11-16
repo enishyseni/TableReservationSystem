@@ -5,8 +5,7 @@ function Login() {
   const link = useNavigate ();
     return (
         <div className="App bg-gray-50 h-screen w-screen relative overflow-hidden flex flex-col justify-center items-center">
-        <div className="  h-40-r w-40-r bg-gradient-to-r from-green-400 to-blue-500 rounded-full absolute left-2/3 -top-56 animate-pulse"></div>
-        <div className="h-35-r w-35-r bg-gradient-to-r from-red-400 via-pink-500 to-purple-500 rounded-full absolute top-96 -left-20 animate-pulse"></div>
+       S
      
      <div className='main flex flex-col justify-evenly items-center'>
         
@@ -16,8 +15,8 @@ function Login() {
             
               <input type="text" placeholder="Email or phone number" className="font-poppins text-slate-900 bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0 border-black tracking-wider"/>
               <input type="password" placeholder= "Password" className="font-poppins text-slate-900 bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0 border-black tracking-wider"/>
-              <button className="font-poppins  text-white text-xs tracking-wider hover:text-gray-900" > Forgot your password? </button>
-              <button onClick={() => link("/register")} className="font-poppin text-white text-xs tracking-wider hover:text-gray-900 -mt-6" >Do not have an account? Register now </button>
+              <button className="font-poppins  text-black text-xs tracking-wider hover:text-gray-900" > Forgot your password? </button>
+              <button onClick={() => link("/register")} className="font-poppin text-black text-xs tracking-wider hover:text-gray-900 -mt-6" >Do not have an account? Register now </button>
             <input type="Submit" className='font-poppins text-white  cursor-pointer text-xl rounded-full px-5 py-1 bg-black bg-opacity-60 hover:bg-black hover:bg-opacity-80 tracking-wider'/>
           </form>
         </div>
