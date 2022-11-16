@@ -8,15 +8,7 @@ namespace API.Controllers
     public class ReservationController : BaseApiController
 
     {
-
-        // private readonly IMediator _mediator;
-        // public ReservationController(IMediator mediator)
-        // {
-
-        // }
-
         [HttpGet]
-
         public async Task<ActionResult<List<Reservation>>> GetReservation()
         {
             return await Mediator.Send(new List.Query());
@@ -28,17 +20,10 @@ namespace API.Controllers
             return await Mediator.Send(new Details.Query { Id = id });
         }
 
-        [HttpPost]
-
+        [HttpPost("{add}")]
         public async Task<IActionResult> CreateReservation(Reservation reservation)
         {
             return Ok(await Mediator.Send(new Create.Command { Reservation = reservation }));
-
         }
-
-
-
     }
-
-
 }

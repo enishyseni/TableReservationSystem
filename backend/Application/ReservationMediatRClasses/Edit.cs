@@ -18,8 +18,8 @@ namespace Application.ReservationMediatRClasses
             private readonly IMapper _mapper;
             public Handler(DataContext context, IMapper mapper)
             {
-                this._mapper = mapper;
-                this._context = context;
+                _mapper = mapper;
+                _context = context;
 
             }
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
