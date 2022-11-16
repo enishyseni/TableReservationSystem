@@ -133,6 +133,53 @@ function Home ()  {
                     </div>
                     <img className='rounded-3xl max-h-[160px] md:max-h-[250px] w-full object-cover' src="https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="/" />
                 </div>
+                <div className="rounded-xl relative">
+                    <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
+                        <p className="text-bold text-3xl px-4 pt-6">Sonder</p>
+                        <p className="px-4"><span className="font-bold">Address:</span> Ukë Bytyqi nr.19 10000 Pristina, Kosovo</p>
+                        <button className='bg-transparent text-white border border-white rounded-xl p-1 absolute bottom-3 mx-4'>Make Reservation</button>
+                    </div>
+                    <img className='rounded-3xl max-h-[160px] md:max-h-[250px] w-full object-cover' src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="/" />
+                </div>
+                <div className="rounded-xl relative">
+                    <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
+                        <p className="text-bold text-3xl px-4 pt-6">Gresa</p>
+                        <p className="px-4"><span className="font-bold">Address:</span> 170 Fehmi Agani, Prishtina 10000</p>
+                        <button className='bg-transparent text-white border border-white rounded-xl p-1 absolute bottom-3 mx-4'>Make Reservation</button>
+                    </div>
+                    <img className='rounded-3xl max-h-[160px] md:max-h-[220px] w-full object-cover' src="https://images.pexels.com/photos/299347/pexels-photo-299347.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="/" />
+                </div>
+                <div className="rounded-xl relative">
+                    <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
+                        <p className="text-bold text-3xl px-4 pt-6">French</p>
+                        <p className="px-4"><span className="font-bold">Address:</span> Agim Ramadani a2 10000 Pristina, Kosovo</p>
+                        <button className='bg-transparent text-white border border-white rounded-xl p-1 absolute bottom-3 mx-4'>Make Reservation</button>
+                    </div>
+                    <img className='rounded-3xl max-h-[160px] md:max-h-[250px] w-full object-cover' src="https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="/" />
+                </div><div className="rounded-xl relative">
+                    <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
+                        <p className="text-bold text-3xl px-4 pt-6">Sonder</p>
+                        <p className="px-4"><span className="font-bold">Address:</span> Ukë Bytyqi nr.19 10000 Pristina, Kosovo</p>
+                        <button className='bg-transparent text-white border border-white rounded-xl p-1 absolute bottom-3 mx-4'>Make Reservation</button>
+                    </div>
+                    <img className='rounded-3xl max-h-[160px] md:max-h-[250px] w-full object-cover' src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="/" />
+                </div>
+                <div className="rounded-xl relative">
+                    <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
+                        <p className="text-bold text-3xl px-4 pt-6">Gresa</p>
+                        <p className="px-4"><span className="font-bold">Address:</span> 170 Fehmi Agani, Prishtina 10000</p>
+                        <button className='bg-transparent text-white border border-white rounded-xl p-1 absolute bottom-3 mx-4'>Make Reservation</button>
+                    </div>
+                    <img className='rounded-3xl max-h-[160px] md:max-h-[220px] w-full object-cover' src="https://images.pexels.com/photos/299347/pexels-photo-299347.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="/" />
+                </div>
+                <div className="rounded-xl relative">
+                    <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
+                        <p className="text-bold text-3xl px-4 pt-6">French</p>
+                        <p className="px-4"><span className="font-bold">Address:</span> Agim Ramadani a2 10000 Pristina, Kosovo</p>
+                        <button className='bg-transparent text-white border border-white rounded-xl p-1 absolute bottom-3 mx-4'>Make Reservation</button>
+                    </div>
+                    <img className='rounded-3xl max-h-[160px] md:max-h-[250px] w-full object-cover' src="https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="/" />
+                </div>
             </div>
         </div>
     )

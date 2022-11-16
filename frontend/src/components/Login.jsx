@@ -5,7 +5,6 @@ function Login() {
   const link = useNavigate ();
     return (
         <div className="App bg-gray-50 h-screen w-screen relative overflow-hidden flex flex-col justify-center items-center">
-       S
      
      <div className='main flex flex-col justify-evenly items-center'>
         
