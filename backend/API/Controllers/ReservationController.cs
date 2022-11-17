@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Domain;
 using System.Collections.Generic;
 using Application.ReservationMediatRClasses;
+using Application.Activites;
 
 namespace API.Controllers
 {
@@ -25,5 +26,21 @@ namespace API.Controllers
         {
             return Ok(await Mediator.Send(new Create.Command { Reservation = reservation }));
         }
+
+        [HttpPut("{id}")]
+
+        public async Task<IActionResult>EditReservation(Guid id, Reservation reservation)
+        {
+            reservation.Id=id;
+            return Ok(await Mediator.Send(new Edit.Command{Reservation = reservation}));
+
+        }
+        [HttpDelete("{id}")]
+
+        public async Task<IActionResult>DeleteActivity(Guid id)
+        {
+            return Ok(await Mediator.Send(new Delete.Command{Id = id}));
+        }
+        
     }
 }

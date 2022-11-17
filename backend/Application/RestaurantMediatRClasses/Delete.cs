@@ -1,18 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Domain;
 using MediatR;
 using Persistence;
 
 namespace Application.RestaurantMediatRClasses
 {
-    public class Edit
+    public class Delete
     {
-        public class Command : IRequest
+        public class Command :IRequest
         {
-            public Restaurant Restaurant { get; set; }
+            public Guid Id {get; set;}
         }
 
         public class Handler : IRequestHandler<Command>
@@ -21,15 +16,15 @@ namespace Application.RestaurantMediatRClasses
             public Handler(DataContext context)
             {
                 _context = context;
+
             }
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                var restaurant = await _context.Restaurants.FindAsync(request.Restaurant.Id);
+                var reservation =await _context.Reservations.FindAsync(request.Id);
 
-                restaurant.Location = request.Restaurant.Location ?? restaurant.Location;
+                _context.Remove(reservation);
 
                 await _context.SaveChangesAsync();
-                
                 return Unit.Value;
             }
         }

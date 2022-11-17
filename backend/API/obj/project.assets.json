@@ -1296,6 +1296,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Domain": "1.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",
@@ -4103,32 +4104,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Razer\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Razer\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Razer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj": {
-              "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj"
+            "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj"
             }
           }
         }
