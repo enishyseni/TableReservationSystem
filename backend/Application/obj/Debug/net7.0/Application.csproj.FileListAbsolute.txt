@@ -17,3 +17,8 @@ C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Application\obj\D
 C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Application\obj\Debug\net7.0\Application.pdb
 C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Application\obj\Debug\net7.0\Application.genruntimeconfig.cache
 C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\Application\obj\Debug\net7.0\ref\Application.dll
+C:\Users\Administrator\Documents\GitHub\TableReservationSystem\backend\Application\obj\Debug\net7.0\Application.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\TableReservationSystem\backend\Application\obj\Debug\net7.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\GitHub\TableReservationSystem\backend\Application\obj\Debug\net7.0\Application.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\TableReservationSystem\backend\Application\obj\Debug\net7.0\Application.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\TableReservationSystem\backend\Application\obj\Debug\net7.0\Application.csproj.CoreCompileInputs.cache
