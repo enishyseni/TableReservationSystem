@@ -22,5 +22,6 @@
     <Pkgnetfx-System_Collections_Generic_DictionaryGetOrAdd Condition=" '$(Pkgnetfx-System_Collections_Generic_DictionaryGetOrAdd)' == '' ">C:\Users\Razer\.nuget\packages\netfx-system.collections.generic.dictionarygetoradd\1.1.0</Pkgnetfx-System_Collections_Generic_DictionaryGetOrAdd>
     <Pkgnetfx-System_AppDomainData Condition=" '$(Pkgnetfx-System_AppDomainData)' == '' ">C:\Users\Razer\.nuget\packages\netfx-system.appdomaindata\1.1.0</Pkgnetfx-System_AppDomainData>
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\Razer\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Razer\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.0</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

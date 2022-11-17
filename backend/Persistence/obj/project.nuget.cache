@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/f03YX/xiqh4MHVX7aYGeiwDUbfeJm2LnyWcjp+gdVy+G4RF+qh5psRe6PoLUmcCAHxjSHVvq3qT1mCKF5aMmQ==",
+  "dgSpecHash": "/07aA8jz/+bI1OT95V1cutyUdBA+Vj6BKnSwQf21/LnQctDNjyK+Ba/ocy1t24dliKblk7EFGAhivfhkkAIqBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
+  "projectFilePath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Razer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -17,6 +17,7 @@
     "C:\\Users\\Razer\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.0\\microsoft.entityframeworkcore.design.7.0.0.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.0\\microsoft.entityframeworkcore.relational.7.0.0.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.0\\microsoft.entityframeworkcore.sqlserver.7.0.0.nupkg.sha512",
+    "C:\\Users\\Razer\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.0\\microsoft.entityframeworkcore.tools.7.0.0.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

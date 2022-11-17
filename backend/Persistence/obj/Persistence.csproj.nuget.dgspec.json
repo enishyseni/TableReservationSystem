@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {}
+    "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
+    "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Razer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Razer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,11 +38,13 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
+            "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
@@ -69,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
+    "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
+        "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Razer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\obj\\",
+        "outputPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Razer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -91,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
+              "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
               }
             }
           }
@@ -107,10 +109,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -118,6 +116,10 @@
               "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.0, )"
             }

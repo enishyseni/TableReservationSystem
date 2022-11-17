@@ -3,14 +3,11 @@ using Domain;
 
 namespace Application.Core
 {
-    public class MappingProfiles :Profile
+    public class ReservationMappingProfiles : Profile
     {
-         public MappingProfiles()
-         {
-            CreateMap<Reservation ,Reservation>();
-            
-         }
-
+        public ReservationMappingProfiles()
+        {
+            CreateMap<Reservation, Reservation>();
+        }
     }
-
 }

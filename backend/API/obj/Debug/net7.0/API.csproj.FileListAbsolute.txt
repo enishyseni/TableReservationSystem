@@ -82,3 +82,5 @@ C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\API\obj\Debug\net
 C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\API\obj\Debug\net7.0\API.pdb
 C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\API\obj\Debug\net7.0\ref\API.dll
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\API\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Razer\Documents\GitHub\TableReservationSystem\backend\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
