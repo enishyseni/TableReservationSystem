@@ -1,0 +1,38 @@
+using System;
+using Domain;
+using MediatR;
+using Persistence;
+using static Application.Activites.Delete;
+
+namespace Application.UserMediatRClasses
+{
+    public class Create
+    {
+           public User User { get; set; }
+
+        public class Command : IRequest<object>
+        {
+            public User User { get; set; }
+        }
+    }
+
+        public class Handler : IRequestHandler<Command>
+        {
+            private readonly DataContext _context;
+            public Handler(DataContext context)
+            {
+                _context = context;
+            }
+
+            public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
+            {
+             _context.Users.Add(request.User);
+
+                await _context.SaveChangesAsync();
+
+                return Unit.Value;
+            }
+        }
+    }
+        
+    

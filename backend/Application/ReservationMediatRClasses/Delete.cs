@@ -1,3 +1,4 @@
+using Domain;
 using MediatR;
 using Persistence;
 
@@ -8,7 +9,10 @@ namespace Application.Activites
     {
         public class Command :IRequest 
         {
+            internal User user;
+
             public Guid Id {get; set;}
+            public User User { get; internal set; }
         }
         
         public class Handler :IRequestHandler<Command>

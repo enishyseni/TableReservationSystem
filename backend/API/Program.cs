@@ -21,6 +21,7 @@ builder.Services.AddDbContext<DataContext>(opt =>
 
 builder.Services.AddMediatR(typeof(Application.ReservationMediatRClasses.List.Handler).Assembly);
 builder.Services.AddMediatR(typeof(Application.RestaurantMediatRClasses.List.Handler).Assembly);
+builder.Services.AddMediatR(typeof(Application.UserMediatRClasses.List.Handler).Assembly);
 
 builder.Services.AddAutoMapper(typeof(RestaurantMappingProfiles).Assembly);
 
