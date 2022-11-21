@@ -22,6 +22,6 @@ namespace Persistence
 
         public DbSet<User> Users { get; set; }
 
-        public DbSet<Media> Medias { get; set; }
+        //public DbSet<Media> Medias { get; set; }
     }
 }

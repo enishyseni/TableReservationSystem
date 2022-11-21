@@ -28,7 +28,11 @@ namespace API.Controllers
             return Ok(await Mediator.Send(new Create.Command { Restaurant = restaurant }));
         }
 
+<<<<<<< HEAD
         [HttpPut("edit/{id}")]
+=======
+        [HttpPut("{id}")]
+>>>>>>> e3589a59477a21d1f41ddfa0bf0f90c1e561f3d9
         public async Task<IActionResult> EditRestaurant(Guid id, Restaurant restaurant)
         {
             restaurant.Id = id;
