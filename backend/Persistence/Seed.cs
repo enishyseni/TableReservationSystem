@@ -43,7 +43,7 @@ namespace Persistence
             };
 
             await context.Reservations.AddRangeAsync(reservations);
-            await context.SaveChangesAsync();
+            //await context.SaveChangesAsync();
 
 
 

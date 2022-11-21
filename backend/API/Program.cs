@@ -33,7 +33,7 @@ using (var scope = scopeFactory.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<DataContext>();
     context.Database.Migrate();//qetu osht errori 
-    await Seed.SeedData(context);
+    //await Seed.SeedData(context);
 }
 
 // Configure the HTTP request pipeline.

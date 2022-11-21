@@ -9,35 +9,35 @@ namespace API.Controllers
 {
     public class UserController : BaseApiController
     {
-          [HttpGet]
+        [HttpGet]
 
-          public async Task<ActionResult<List<User>>>GetUser()
-          {
+        public async Task<ActionResult<List<User>>> GetUser()
+        {
             return await Mediator.Send(new List.Query());
-            
-          }
-          [HttpGet("{id}")]
+
+        }
+        [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(Guid id)
         {
-           return await Mediator.Send(new Details.Query{Id = id});
+            return await Mediator.Send(new Details.Query { Id = id });
         }
-         [HttpPost("{add}")]
+        [HttpPost("{add}")]
         public async Task<IActionResult> CreateUser(User user)
         {
-            return Ok(await Mediator.Send(new Create.Command {User = user}));
+            return Ok(await Mediator.Send(new Create.Command { User = user }));
         }
-        [HttpPut("{id/edit}")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> EditUser(Guid id, User user)
         {
             user.Id = id;
             return Ok(await Mediator.Send(new Edit.Command { User = user }));
         }
-         [HttpDelete("{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
-            return Ok(await Mediator.Send(new Delete.Command {Id = id}));
+            return Ok(await Mediator.Send(new Delete.Command { Id = id }));
         }
-   
-     }
-        
+
     }
+
+}
