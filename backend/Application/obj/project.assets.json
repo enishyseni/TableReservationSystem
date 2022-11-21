@@ -1221,6 +1221,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
         },
         "compile": {
@@ -1235,6 +1236,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
         },
         "compile": {
@@ -3696,6 +3698,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "Domain >= 1.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.0.0",
+      "Microsoft.EntityFrameworkCore.Analyzers >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
@@ -3709,11 +3712,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
+      "projectUniqueName": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
+      "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Razer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\obj\\",
+      "outputPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Razer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3731,8 +3734,8 @@
             "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj"
+            "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
+              "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -3754,6 +3757,10 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[11.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Analyzers": {
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

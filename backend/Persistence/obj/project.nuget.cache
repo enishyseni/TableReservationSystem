@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VESKx+0uLxoH1CuENdgAIGUOvNB15N9E68KhLMtHMRRI7vsLSac3hDl95KCynYzSvsVd04O4MbQLLgUsGXthNw==",
+  "dgSpecHash": "BB4EbUYwesGkXGEG31HeeTZHnxiN4dQI7kRAJRylNhz2PQYqsfXjZ0lV8KMPCpe9Q6+Newc5P0AkKYL26NHCig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
+  "projectFilePath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Razer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

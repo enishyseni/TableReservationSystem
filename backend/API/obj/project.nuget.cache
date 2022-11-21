@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c7jGCXoZ0F90gce9v6elKrSgcm915CDf3GDxvdOBR/2P+SVYIoUSdOdhC7tRX2yP0+4elqOprqOik5HRD9lTIA==",
+  "dgSpecHash": "smBkkg5Wq8N4S7lLLomDkzqNWqAbvC/PGk5VnnnfKIz8dxK1jXER9DEm30R7mr60jZjkUfZ4gD4fW3lyIQ9b8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
+  "projectFilePath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Razer\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
