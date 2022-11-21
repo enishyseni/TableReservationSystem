@@ -19,11 +19,16 @@ builder.Services.AddDbContext<DataContext>(opt =>
 
 //builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddMediatR(AppDomain.CurrentDomain.Load("Application"));
+
 builder.Services.AddMediatR(typeof(Application.ReservationMediatRClasses.List.Handler).Assembly);
 builder.Services.AddMediatR(typeof(Application.RestaurantMediatRClasses.List.Handler).Assembly);
 builder.Services.AddMediatR(typeof(Application.UserMediatRClasses.List.Handler).Assembly);
 
 builder.Services.AddAutoMapper(typeof(RestaurantMappingProfiles).Assembly);
+builder.Services.AddAutoMapper(typeof(ReservationMappingProfiles).Assembly);
+builder.Services.AddAutoMapper(typeof(UserMappingProfiles).Assembly);
+
 
 var app = builder.Build();
 
