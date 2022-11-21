@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NaSms2J65reeNbvCTfD3qJ0eh3dRoH8FMnO4z7xvxfW5X7Y6PDwRIUAdZ+8WfvUg8S1AcNKZ/C7VNfeeigWAQg==",
+  "dgSpecHash": "3yzk0/iH1qLzYplQ8NXsN5uCuRem0Xzz+w9cYSaiWbSYV8JCqgEFuKLcekKvbaCxXjysuDLz4r4KE6kYIS8r+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\BACKEND\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Razer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
