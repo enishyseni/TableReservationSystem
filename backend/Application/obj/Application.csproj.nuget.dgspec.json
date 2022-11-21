@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj": {}
+    "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj": {
+    "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Razer\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Razer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -29,8 +29,8 @@
               "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
               },
-              "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
-                "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -173,14 +173,14 @@
         }
       }
     },
-    "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Razer\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Razer\\AppData\\Roaming\\NuGet\\NuGet.Config"
