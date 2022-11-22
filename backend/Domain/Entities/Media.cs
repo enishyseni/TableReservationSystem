@@ -1,9 +1,8 @@
-namespace Domain.Entities
-{
-    public class Media : Base
-    {
-        public string FilePath { get; set; }
+using Domain;
 
-        public int SortOrder { get; set; }
-    }
+public class Media : Base
+{
+    public string FilePath { get; set; }
+
+    public int SortOrder { get; set; }
 }
