@@ -7,15 +7,14 @@ using Application.Activites;
 namespace API.Controllers
 {
     public class ReservationController : BaseApiController
-
     {
         [HttpGet]
         public async Task<ActionResult<List<Reservation>>> GetReservation()
         {
             return await Mediator.Send(new List.Query());
         }
-        [HttpGet("{id}")]
 
+        [HttpGet("{id}")]
         public async Task<ActionResult<Reservation>> GetReservation(Guid id)
         {
             return await Mediator.Send(new Details.Query { Id = id });
@@ -28,19 +27,17 @@ namespace API.Controllers
         }
 
         [HttpPut("{id}")]
-
-        public async Task<IActionResult>EditReservation(Guid id, Reservation reservation)
+        public async Task<IActionResult> EditReservation(Guid id, Reservation reservation)
         {
-            reservation.Id=id;
-            return Ok(await Mediator.Send(new Edit.Command{Reservation = reservation}));
+            reservation.Id = id;
+            return Ok(await Mediator.Send(new Edit.Command { Reservation = reservation }));
 
         }
+
         [HttpDelete("{id}")]
-
-        public async Task<IActionResult>DeleteActivity(Guid id)
+        public async Task<IActionResult> DeleteActivity(Guid id)
         {
-            return Ok(await Mediator.Send(new Delete.Command{Id = id}));
+            return Ok(await Mediator.Send(new Delete.Command { Id = id }));
         }
-        
     }
 }

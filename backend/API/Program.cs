@@ -2,12 +2,24 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 using Application.Core;
+using FluentValidation.AspNetCore;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+//obsolete
+builder.Services.AddControllers().AddFluentValidation(config => 
+{
+    config.RegisterValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
+});
+
+//new methods instead of AddFluentValidation():
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+builder.Services.AddValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -16,8 +28,6 @@ builder.Services.AddDbContext<DataContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
-//builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddMediatR(AppDomain.CurrentDomain.Load("Application"));
 
@@ -28,7 +38,6 @@ builder.Services.AddMediatR(typeof(Application.UserMediatRClasses.List.Handler).
 builder.Services.AddAutoMapper(typeof(RestaurantMappingProfiles).Assembly);
 builder.Services.AddAutoMapper(typeof(ReservationMappingProfiles).Assembly);
 builder.Services.AddAutoMapper(typeof(UserMappingProfiles).Assembly);
-
 
 var app = builder.Build();
 

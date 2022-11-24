@@ -1,5 +1,7 @@
+using Application.Validators;
 using AutoMapper;
 using Domain;
+using FluentValidation;
 using MediatR;
 using Persistence;
 
@@ -7,11 +9,19 @@ namespace Application.ReservationMediatRClasses
 {
     public class Edit
     {
-
         public class Command : IRequest
         {
             public Reservation Reservation { get; set; }
         }
+
+        public class CommandValidator : AbstractValidator<Command>
+        {
+            public CommandValidator()
+            {
+                RuleFor(x => x.Reservation).SetValidator(new ReservationValidator()); //qka ndodh me BaseValidator class?
+            }
+        }
+        
         public class Handler : IRequestHandler<Command>
         {
             private readonly DataContext _context;
@@ -20,7 +30,6 @@ namespace Application.ReservationMediatRClasses
             {
                 _mapper = mapper;
                 _context = context;
-
             }
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
