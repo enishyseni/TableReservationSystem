@@ -13,7 +13,7 @@ function Navbar() {
         <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
             {/*Left side */}
             <div className="flex items-center">
-                <button onClick={() => search("/home")} className="text-2xl sm:text-3xl lg:text-4xl px-2">
+                <button onClick={() => search("/")} className="text-2xl sm:text-3xl lg:text-4xl px-2">
                     Book<span className="font-bold text-red-500">Table</span>
                 </button>
             </div>

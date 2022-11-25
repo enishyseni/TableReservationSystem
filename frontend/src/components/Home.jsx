@@ -181,7 +181,9 @@ function Home() {
               <span className="font-bold">Address:</span> 170 Fehmi Agani,
               Prishtina 10000
             </p>
-            <button className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            <button 
+             onClick={() => makereserva("makereservation")}
+            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
               Make Reservation
             </button>
           </div>
@@ -198,7 +200,9 @@ function Home() {
               <span className="font-bold">Address:</span> Agim Ramadani a2 10000
               Pristina, Kosovo
             </p>
-            <button className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            <button 
+             onClick={() => makereserva("makereservation")}
+            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
               Make Reservation
             </button>
           </div>
@@ -215,7 +219,9 @@ function Home() {
               <span className="font-bold">Address:</span> Ukë Bytyqi nr.19 10000
               Pristina, Kosovo
             </p>
-            <button className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            <button 
+             onClick={() => makereserva("makereservation")}
+            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
               Make Reservation
             </button>
           </div>
@@ -232,7 +238,9 @@ function Home() {
               <span className="font-bold">Address:</span> 170 Fehmi Agani,
               Prishtina 10000
             </p>
-            <button className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            <button 
+             onClick={() => makereserva("makereservation")}
+            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
               Make Reservation
             </button>
           </div>
@@ -249,7 +257,9 @@ function Home() {
               <span className="font-bold">Address:</span> Agim Ramadani a2 10000
               Pristina, Kosovo
             </p>
-            <button className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            <button 
+             onClick={() => makereserva("makereservation")}
+            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
               Make Reservation
             </button>
           </div>
@@ -266,7 +276,9 @@ function Home() {
               <span className="font-bold">Address:</span> Ukë Bytyqi nr.19 10000
               Pristina, Kosovo
             </p>
-            <button className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            <button 
+             onClick={() => makereserva("makereservation")}
+            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
               Make Reservation
             </button>
           </div>
@@ -283,7 +295,9 @@ function Home() {
               <span className="font-bold">Address:</span> 170 Fehmi Agani,
               Prishtina 10000
             </p>
-            <button className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            <button 
+             onClick={() => makereserva("makereservation")}
+            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
               Make Reservation
             </button>
           </div>
@@ -300,7 +314,9 @@ function Home() {
               <span className="font-bold">Address:</span> Agim Ramadani a2 10000
               Pristina, Kosovo
             </p>
-            <button className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            <button 
+             onClick={() => makereserva("makereservation")}
+            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
               Make Reservation
             </button>
           </div>
