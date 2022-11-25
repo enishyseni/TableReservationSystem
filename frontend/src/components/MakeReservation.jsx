@@ -26,11 +26,11 @@ const Reservation = () => {
     slideRef.current.addEventListener("animationend", removeAnimation);
   }, []);
 
-  const startSlider = () => {
-    setInterval(() => {
-      handleOnNextClick();
-    }, 3000);
-  };
+  // const startSlider = () => {
+  //   setInterval(() => {
+  //     handleOnNextClick();
+  //   }, 3000);
+  // };
 
   const handleOnNextClick = () => {
     count = (count + 1) % featuredProducts.length;
