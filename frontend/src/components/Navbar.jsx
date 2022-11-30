@@ -6,15 +6,16 @@ import {AiOutlineLogin, AiOutlineClose} from 'react-icons/ai';
 
 function Navbar() {
     const history = useNavigate();
+    const search = useNavigate();
    
     const [nav, setNav] = useState(false);
     return (
         <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
             {/*Left side */}
             <div className="flex items-center">
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">
+                <button onClick={() => search("/")} className="text-2xl sm:text-3xl lg:text-4xl px-2">
                     Book<span className="font-bold text-red-500">Table</span>
-                </h1>
+                </button>
             </div>
             
             {/* 

@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Landing from './components/Landing';
 import Addrestaurant from './components/Addrestaurant';
 import Register from './components/Register';
+import MakeReservation from './components/MakeReservation';
 import {Routes, Route } from "react-router-dom"
 
 function App() {
@@ -12,11 +13,12 @@ function App() {
     <>
     <Navbar/>
     <Routes>
-      <Route path='/' element={<Landing/>}/>
-      <Route path="/home" element={<Home/>} />
+      <Route path='/landing' element={<Landing/>}/>
+      <Route path="/" element={<Home/>} />
       <Route path="/addrestaurant" element={<Addrestaurant/>} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />  
+      <Route path='/makereservation' element={<MakeReservation/>}/>
     </Routes>
     </>
   );

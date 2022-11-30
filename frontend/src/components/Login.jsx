@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 
 function Login() {
   const link = useNavigate ();
+  const history = useNavigate ();
     return (
         <div className="App bg-gray-50 h-screen w-screen relative overflow-hidden flex flex-col justify-center items-center">
      
@@ -14,8 +15,9 @@ function Login() {
             
               <input type="text" placeholder="Email or phone number" className="font-poppins text-slate-900 bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0 border-black tracking-wider"/>
               <input type="password" placeholder= "Password" className="font-poppins text-slate-900 bg-transparent focus:outline-none border border-r-0 border-t-0 border-l-0 border-black tracking-wider"/>
-              <button className="font-poppins  text-black text-xs tracking-wider hover:text-gray-900" > Forgot your password? </button>
-              <button onClick={() => link("/register")} className="font-poppin text-black text-xs tracking-wider hover:text-gray-900 -mt-6" >Do not have an account? Register now </button>
+              <button className="font-poppins  text-black text-sm tracking-wider hover:text-gray-900" > Forgot your password? </button>
+              <button onClick={() => link("/register")} className="font-poppin text-black text-sm tracking-wider hover:text-gray-900 -mt-6" >Register as client </button>
+              <button onClick={() => history("/addrestaurant")} className="font-poppin text-black text-sm tracking-wider hover:text-gray-900 -mt-6" >Register as business </button>
             <input type="Submit" className='font-poppins text-white  cursor-pointer text-xl rounded-full px-5 py-1 bg-black bg-opacity-60 hover:bg-black hover:bg-opacity-80 tracking-wider'/>
           </form>
         </div>
