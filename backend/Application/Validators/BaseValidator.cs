@@ -1,9 +1,10 @@
+using Application.DTOs;
 using Domain;
 using FluentValidation;
 
 namespace Application.Validators
 {
-    public class BaseValidator : AbstractValidator<Base>
+    public class BaseValidator : AbstractValidator<BaseDTO>
     {
         public BaseValidator()
         {

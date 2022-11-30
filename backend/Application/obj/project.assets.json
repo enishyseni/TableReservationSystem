@@ -75,56 +75,6 @@
           }
         }
       },
-      "FluentValidation/11.2.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/FluentValidation.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/FluentValidation.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FluentValidation.AspNetCore/11.2.2": {
-        "type": "package",
-        "dependencies": {
-          "FluentValidation": "11.2.1",
-          "FluentValidation.DependencyInjectionExtensions": "11.2.1"
-        },
-        "compile": {
-          "lib/net6.0/FluentValidation.AspNetCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/FluentValidation.AspNetCore.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "FluentValidation.DependencyInjectionExtensions/11.2.1": {
-        "type": "package",
-        "dependencies": {
-          "FluentValidation": "11.2.1",
-          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1364,63 +1314,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
-      ]
-    },
-    "FluentValidation/11.2.1": {
-      "sha512": "ZrQD0TGd0mHqf/zErZOEaba8cBeInaJj02nqinO+0La3uE08sJ5ScTYqsCbdx9fLHsX8rh+5KH5RtL2eOUS+OA==",
-      "type": "package",
-      "path": "fluentvalidation/11.2.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "fluent-validation-icon.png",
-        "fluentvalidation.11.2.1.nupkg.sha512",
-        "fluentvalidation.nuspec",
-        "lib/net5.0/FluentValidation.dll",
-        "lib/net5.0/FluentValidation.xml",
-        "lib/net6.0/FluentValidation.dll",
-        "lib/net6.0/FluentValidation.xml",
-        "lib/netstandard2.0/FluentValidation.dll",
-        "lib/netstandard2.0/FluentValidation.xml",
-        "lib/netstandard2.1/FluentValidation.dll",
-        "lib/netstandard2.1/FluentValidation.xml"
-      ]
-    },
-    "FluentValidation.AspNetCore/11.2.2": {
-      "sha512": "jU/MHXqg9cnOU18dY75vorP2c2WDKMan4zegOPsoc34xZVjzTEtXP0fKvkDEdeaChUVooNWuRr27u9w3sYbEFA==",
-      "type": "package",
-      "path": "fluentvalidation.aspnetcore/11.2.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "fluent-validation-icon.png",
-        "fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
-        "fluentvalidation.aspnetcore.nuspec",
-        "lib/net5.0/FluentValidation.AspNetCore.dll",
-        "lib/net5.0/FluentValidation.AspNetCore.xml",
-        "lib/net6.0/FluentValidation.AspNetCore.dll",
-        "lib/net6.0/FluentValidation.AspNetCore.xml",
-        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
-        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
-      ]
-    },
-    "FluentValidation.DependencyInjectionExtensions/11.2.1": {
-      "sha512": "WqR2kt0OidUCg9xS+YOoiDmdCu7EnYLLgQb/bX+5fTTVor+90dWmr1OdJaWlLZvg2nbwV9EfxA9FZp91+JmQtg==",
-      "type": "package",
-      "path": "fluentvalidation.dependencyinjectionextensions/11.2.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "fluent-validation-icon.png",
-        "fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
-        "fluentvalidation.dependencyinjectionextensions.nuspec",
-        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
-        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
-        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
-        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3804,7 +3697,6 @@
     "net7.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "Domain >= 1.0.0",
-      "FluentValidation.AspNetCore >= 11.2.2",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Microsoft.EntityFrameworkCore.Analyzers >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
@@ -3815,19 +3707,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Razer\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Razer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Razer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3841,11 +3733,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
+            "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\Razer\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj"
+            "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj"
             }
           }
         }
@@ -3863,10 +3755,6 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[12.0.0, )"
-          },
-          "FluentValidation.AspNetCore": {
-            "target": "Package",
-            "version": "[11.2.2, )"
           },
           "MediatR.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",

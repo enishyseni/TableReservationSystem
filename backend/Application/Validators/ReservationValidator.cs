@@ -1,9 +1,10 @@
+using Application.DTOs;
 using Domain;
 using FluentValidation;
 
 namespace Application.Validators
 {
-    public class ReservationValidator : AbstractValidator<Reservation> 
+    public class ReservationValidator : AbstractValidator<ReservationDTO> 
     {
         public ReservationValidator()
         {

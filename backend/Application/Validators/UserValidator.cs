@@ -1,9 +1,10 @@
+using Application.DTOs;
 using Domain;
 using FluentValidation;
 
 namespace Application.Validators
 {
-    public class UserValidator : AbstractValidator<User>
+    public class UserValidator : AbstractValidator<UserDTO>
     {
         public UserValidator()
         {

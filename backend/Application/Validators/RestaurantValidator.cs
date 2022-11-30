@@ -1,10 +1,11 @@
 using System.Data;
+using Application.DTOs;
 using Domain;
 using FluentValidation;
 
 namespace Application.Validators
 {
-    public class RestaurantValidator : AbstractValidator<Restaurant>
+    public class RestaurantValidator : AbstractValidator<RestaurantDTO>
     {
         public RestaurantValidator()
         {
