@@ -8,7 +8,7 @@ function Login() {
      
      <div className='main flex flex-col justify-evenly items-center'>
         
-        <div className=" flex flex-col items-center container h-[444px] w-[444px] bg-gray-900 bg-opacity-10 rounded-2xl shadow-5xl relative z-2 border border-opacity-30 border-r-0 border-b-0 backdrop-filter backdrop-blur-sm">
+        <div className=" flex flex-col items-center container h-96 w-96 md:h-[444px] md:w-[444px] bg-gray-900 bg-opacity-10 rounded-2xl shadow-5xl relative z-2 border border-opacity-30 border-r-0 border-b-0 backdrop-filter backdrop-blur-sm">
         <div className="font-poppins h-35 w-64 text-white bg-black text-2xl tracking-wider py-2 px-5 rounded-full -mt-3"><span className='px-12'>Welcome</span></div>
           <form className="h-full flex flex-col justify-evenly items-center">
             

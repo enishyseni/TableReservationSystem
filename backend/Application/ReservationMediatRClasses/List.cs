@@ -12,11 +12,12 @@ namespace Application.ReservationMediatRClasses
         public class Handler : IRequestHandler<Query, List<Reservation>>
         {
             private readonly DataContext _context;
-
+            
             public Handler(DataContext context)
             {
                 context = _context;
             }
+
             public async Task<List<Reservation>> Handle(Query request, CancellationToken cancellationToken)
             {
                 return await _context.Reservations.ToListAsync();

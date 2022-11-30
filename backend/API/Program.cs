@@ -4,6 +4,8 @@ using Persistence;
 using Application.Core;
 using FluentValidation.AspNetCore;
 using FluentValidation;
+using Domain;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,6 +40,13 @@ builder.Services.AddMediatR(typeof(Application.UserMediatRClasses.List.Handler).
 builder.Services.AddAutoMapper(typeof(RestaurantMappingProfiles).Assembly);
 builder.Services.AddAutoMapper(typeof(ReservationMappingProfiles).Assembly);
 builder.Services.AddAutoMapper(typeof(UserMappingProfiles).Assembly);
+
+//var path = "https://localhost:7010/api";
+//string jsonString;
+//Restaurant restaurant = new Restaurant();
+//jsonString = File.ReadAllText(path);
+//Console.WriteLine(jsonString);
+//JsonSerializer.Deserialize<List<Restaurant>>(jsonString);
 
 var app = builder.Build();
 
