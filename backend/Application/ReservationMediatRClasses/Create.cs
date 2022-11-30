@@ -1,6 +1,12 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Application.DTOs;
 using Domain;
 using MediatR;
 using Persistence;
+
 
 namespace Application.ReservationMediatRClasses
 {
@@ -11,8 +17,7 @@ namespace Application.ReservationMediatRClasses
         {
            
            public Reservation Reservation{get; set;}
-
-
+            public ReservationDTO ReservationDTO { get; set; }
         }
 
         public class Handler :IRequestHandler<Command>

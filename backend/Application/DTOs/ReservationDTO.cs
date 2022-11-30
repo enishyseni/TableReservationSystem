@@ -8,7 +8,7 @@ namespace Application.DTOs
 {
     public class ReservationDTO : BaseDTO
     {
-        
+    
         public int PhoneNumber { get; set; }
 
         public string Email { get; set; }

@@ -21,11 +21,13 @@ namespace Persistence
             {
                 new Reservation{
 
+                    
                     Name ="Sami",
                     PhoneNumber = 044444333,
                     Email = "SamiQorri@gmail.com",
                     StartDateTime=  DateTime.Now.AddMonths(-2),
                     NumberOfPersons = 4,
+                    Status ="Restaurant",
                     Description ="dsaesasd",
 
 
@@ -38,6 +40,7 @@ namespace Persistence
                     Email = "ArtinRexhepi@gmail.com",
                     StartDateTime=  DateTime.Now.AddMonths(-2),
                     NumberOfPersons = 4,
+                    Status= "CaffeBar",
                     Description ="dsaesasd",
 
 
@@ -48,7 +51,7 @@ namespace Persistence
             };
 
             await context.Reservations.AddRangeAsync(reservations);
-            //await context.SaveChangesAsync();
+            await context.SaveChangesAsync();
 
 
 

@@ -1,4 +1,5 @@
 using System;
+using Application.DTOs;
 using Domain;
 using MediatR;
 using Persistence;
@@ -13,6 +14,7 @@ namespace Application.UserMediatRClasses
         public class Command : IRequest<object>
         {
             public User User { get; set; }
+            public UserDTO UserDTO { get; set; }
         }
     }
 

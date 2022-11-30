@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Application.DTOs;
 using AutoMapper;
 using Domain;
 using MediatR;
@@ -11,6 +16,7 @@ namespace Application.ReservationMediatRClasses
         public class Command : IRequest
         {
             public Reservation Reservation { get; set; }
+            public ReservationDTO ReservationDTO { get; set; }
         }
         public class Handler : IRequestHandler<Command>
         {
