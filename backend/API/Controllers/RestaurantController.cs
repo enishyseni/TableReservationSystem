@@ -22,7 +22,7 @@ namespace API.Controllers
             return await Mediator.Send(new Details.Query { Id = id });
         }
 
-        [HttpPost("{add}")]
+        [HttpPost]
         public async Task<IActionResult> CreateRestaurant(Restaurant restaurant)
         {
             return Ok(await Mediator.Send(new Create.Command { Restaurant = restaurant }));

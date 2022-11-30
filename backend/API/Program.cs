@@ -12,10 +12,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 //obsolete
-builder.Services.AddControllers().AddFluentValidation(config => 
-{
-    config.RegisterValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
-});
+//builder.Services.AddControllers().AddFluentValidation(config => 
+//{
+//    config.RegisterValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
+//});
 
 //new methods instead of AddFluentValidation():
 builder.Services.AddFluentValidationAutoValidation();
