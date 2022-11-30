@@ -1,3 +1,4 @@
+using Application.DTOs;
 using AutoMapper;
 using Domain;
 using MediatR;
@@ -10,6 +11,7 @@ namespace Application.RestaurantMediatRClasses
         public class Command : IRequest
         {
             public Restaurant Restaurant { get; set; }
+            public RestaurantDTO RestaurantDTO { get; set; }
         }
 
         public class Handler : IRequestHandler<Command>

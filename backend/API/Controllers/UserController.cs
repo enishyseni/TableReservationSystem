@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.DTOs;
 using Application.UserMediatRClasses;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
@@ -11,30 +12,30 @@ namespace API.Controllers
     {
         [HttpGet]
 
-        public async Task<ActionResult<List<User>>> GetUser()
+        public async Task<ActionResult<List<UserDTO>>> GetUserDTO()
         {
-            return await Mediator.Send(new List.Query());
+            return Ok( await Mediator.Send(new List.Query()));
 
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(Guid id)
+        public async Task<ActionResult<UserDTO>> GetUserDTO(Guid id)
         {
-            return await Mediator.Send(new Details.Query { Id = id });
+            return Ok (await Mediator.Send(new Details.Query { Id = id }));
         }
         [HttpPost("{add}")]
-        public async Task<IActionResult> CreateUser(User user)
+        public async Task<IActionResult> CreateUserDTO(UserDTO userDto)
         {
-            return Ok(await Mediator.Send(new Create.Command { User = user }));
+            return Ok(await Mediator.Send(new Create.Command { UserDTO = userDto }));
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> EditUser(Guid id, User user)
+        public async Task<IActionResult> EditUserDTO(Guid id, UserDTO userDto)
         {
-            user.Id = id;
-            return Ok(await Mediator.Send(new Edit.Command { User = user }));
+            userDto.Id = id;
+            return Ok(await Mediator.Send(new Edit.Command { UserdDTO = userDto }));
         }
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(Guid id)
+        public async Task<IActionResult> DeleteUserDTO(Guid id)
         {
             return Ok(await Mediator.Send(new Delete.Command { Id = id }));
         }
