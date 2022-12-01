@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Domain;
 using MediatR;
@@ -24,8 +25,13 @@ namespace Application.RestaurantMediatRClasses
             }
             public async Task<Restaurant> Handle(Query request, CancellationToken cancellationToken)
             {
-                return await _context.Restaurants.FindAsync(request.Id);
-            }
+                var Restaurant = await _context.Restaurants.FindAsync(request.Id);
+                
+                if(Restaurant == null) throw new Exception("Restaurant not found");
+
+                return Restaurant;
+            }       
+
         }
     }
 }

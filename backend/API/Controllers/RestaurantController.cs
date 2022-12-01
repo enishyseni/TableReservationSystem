@@ -18,18 +18,17 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<RestaurantDTO>> GetRestaurantDTO(Guid id)
+        public async Task<ActionResult<RestaurantDTO>> GetRestaurant(Guid id)
         {
-            return Ok (await Mediator.Send(new Details.Query { Id = id }));
+          return Ok(await Mediator.Send(new Details.Query { Id = id }));
+
         }
 
-<<<<<<< HEAD
+      
+
         [HttpPost]
-        public async Task<IActionResult> CreateRestaurant(Restaurant restaurant)
-=======
-        [HttpPost("{add}")]
         public async Task<IActionResult> CreateRestaurantDTO(RestaurantDTO restaurantDto)
->>>>>>> aaf168ae71ebd05796dc972272de64b4a7c13aa6
+
         {
             return Ok(await Mediator.Send(new Create.Command { RestaurantDTO = restaurantDto }));
         }

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using Application.ReservationMediatRClasses;
 using Application.Activites;
 using Application.DTOs;
+using System.Threading.Tasks;
+using System;
 
 namespace API.Controllers
 {
