@@ -14,6 +14,7 @@ namespace Application.Validators
             RuleFor(x => x.MainImage).NotEmpty();
             RuleFor(x => x.Images).NotEmpty();
             RuleFor(x => x.Users).NotEmpty();
+            
         }
     }
 }

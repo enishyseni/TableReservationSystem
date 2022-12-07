@@ -28,6 +28,7 @@ namespace Application.RestaurantMediatRClasses
                 var Restaurant = await _context.Restaurants.FindAsync(request.Id);
                 
                 if(Restaurant == null) throw new Exception("Restaurant not found");
+               
 
                 return Restaurant;
             }       
