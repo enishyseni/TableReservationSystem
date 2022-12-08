@@ -152,18 +152,18 @@ function Home() {
         </div>
       </div>
 
-      <div className="max-w-[1640px] mx-auto p-4 py-10 grid md:grid-cols-3 gap-6">
+      <div className="max-w-full mx-auto p-4 py-10 grid md:grid-cols-2 gap-6 lg:grid-cols-3">
         {/* Card */}
         <div className="rounded-xl relative">
           <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
-            <p className="text-bold text-3xl px-4 pt-6">Sonder</p>
+            <p className="text-bold text-2xl px-4 pt-6 md:text-3xl lg:text-3xl">Sonder</p>
             <p className="px-4">
-              <span className="font-bold">Address:</span> Ukë Bytyqi nr.19 10000
+              <span className="font-bold text-lg md:text-xl lg:text-xl">Address:</span> Ukë Bytyqi nr.19 10000
               Pristina, Kosovo
             </p>
             <button
               onClick={() => makereserva("makereservation")}
-              className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4"
+              className="bg-transparent text-white border border-white rounded-xl text-md p-1 md:p-2 lg:p-2 absolute bottom-3 mx-4 mt-2"
             >
               Make Reservation
             </button>
@@ -176,14 +176,14 @@ function Home() {
         </div>
         <div className="rounded-xl relative">
           <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
-            <p className="text-bold text-3xl px-4 pt-6">Gresa</p>
+            <p className="text-bold text-2xl px-4 pt-6 md:text-3xl lg:text-3xl">Gresa</p>
             <p className="px-4">
-              <span className="font-bold">Address:</span> 170 Fehmi Agani,
+              <span className="font-bold text-lg md:text-xl lg:text-xl">Address:</span> 170 Fehmi Agani,
               Prishtina 10000
             </p>
             <button 
              onClick={() => makereserva("makereservation")}
-            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            className="bg-transparent text-white border border-white rounded-xl text-md p-1 md:p-2 lg:p-2 absolute bottom-3 mx-4 mt-2">
               Make Reservation
             </button>
           </div>
@@ -195,14 +195,14 @@ function Home() {
         </div>
         <div className="rounded-xl relative">
           <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
-            <p className="text-bold text-3xl px-4 pt-6">French</p>
+            <p className="text-bold text-2xl px-4 pt-6 md:text-3xl lg:text-3xl">French</p>
             <p className="px-4">
-              <span className="font-bold">Address:</span> Agim Ramadani a2 10000
+              <span className="font-bold text-lg md:text-xl lg:text-xl">Address:</span> Agim Ramadani a2 10000
               Pristina, Kosovo
             </p>
             <button 
              onClick={() => makereserva("makereservation")}
-            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            className="bg-transparent text-white border border-white rounded-xl text-md p-1 md:p-2 lg:p-2 absolute bottom-3 mx-4 mt-2">
               Make Reservation
             </button>
           </div>
@@ -214,14 +214,14 @@ function Home() {
         </div>
         <div className="rounded-xl relative">
           <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
-            <p className="text-bold text-3xl px-4 pt-6">Sonder</p>
+            <p className="text-bold text-2xl px-4 pt-6 md:text-3xl lg:text-3xl">Sonder</p>
             <p className="px-4">
-              <span className="font-bold">Address:</span> Ukë Bytyqi nr.19 10000
+              <span className="font-bold text-lg md:text-xl lg:text-xl">Address:</span> Ukë Bytyqi nr.19 10000
               Pristina, Kosovo
             </p>
             <button 
              onClick={() => makereserva("makereservation")}
-            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            className="bg-transparent text-white border border-white rounded-xl text-md p-1 md:p-2 lg:p-2 absolute bottom-3 mx-4 mt-2">
               Make Reservation
             </button>
           </div>
@@ -233,14 +233,14 @@ function Home() {
         </div>
         <div className="rounded-xl relative">
           <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
-            <p className="text-bold text-3xl px-4 pt-6">Gresa</p>
+            <p className="text-bold text-2xl px-4 pt-6 md:text-3xl lg:text-3xl">Gresa</p>
             <p className="px-4">
-              <span className="font-bold">Address:</span> 170 Fehmi Agani,
+              <span className="font-bold text-lg md:text-xl lg:text-xl">Address:</span> 170 Fehmi Agani,
               Prishtina 10000
             </p>
             <button 
              onClick={() => makereserva("makereservation")}
-            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            className="bg-transparent text-white border border-white rounded-xl text-md p-1 md:p-2 lg:p-2 absolute bottom-3 mx-4 mt-2">
               Make Reservation
             </button>
           </div>
@@ -252,14 +252,14 @@ function Home() {
         </div>
         <div className="rounded-xl relative">
           <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
-            <p className="text-bold text-3xl px-4 pt-6">French</p>
+            <p className="text-bold text-2xl px-4 pt-6 md:text-3xl lg:text-3xl">French</p>
             <p className="px-4">
-              <span className="font-bold">Address:</span> Agim Ramadani a2 10000
+              <span className="font-bold text-lg md:text-xl lg:text-xl">Address:</span> Agim Ramadani a2 10000
               Pristina, Kosovo
             </p>
             <button 
              onClick={() => makereserva("makereservation")}
-            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            className="bg-transparent text-white border border-white rounded-xl text-md p-1 md:p-2 lg:p-2 absolute bottom-3 mx-4 mt-2">
               Make Reservation
             </button>
           </div>
@@ -271,14 +271,14 @@ function Home() {
         </div>
         <div className="rounded-xl relative">
           <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
-            <p className="text-bold text-3xl px-4 pt-6">Sonder</p>
+            <p className="text-bold text-2xl px-4 pt-6 md:text-3xl lg:text-3xl">Sonder</p>
             <p className="px-4">
-              <span className="font-bold">Address:</span> Ukë Bytyqi nr.19 10000
+              <span className="font-bold text-lg md:text-xl lg:text-xl">Address:</span> Ukë Bytyqi nr.19 10000
               Pristina, Kosovo
             </p>
             <button 
              onClick={() => makereserva("makereservation")}
-            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            className="bg-transparent text-white border border-white rounded-xl text-md p-1 md:p-2 lg:p-2 absolute bottom-3 mx-4 mt-2">
               Make Reservation
             </button>
           </div>
@@ -290,14 +290,14 @@ function Home() {
         </div>
         <div className="rounded-xl relative">
           <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
-            <p className="text-bold text-3xl px-4 pt-6">Gresa</p>
+            <p className="text-bold text-2xl px-4 pt-6 md:text-3xl lg:text-3xl">Gresa</p>
             <p className="px-4">
-              <span className="font-bold">Address:</span> 170 Fehmi Agani,
+              <span className="font-bold text-lg md:text-xl lg:text-xl">Address:</span> 170 Fehmi Agani,
               Prishtina 10000
             </p>
             <button 
              onClick={() => makereserva("makereservation")}
-            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            className="bg-transparent text-white border border-white rounded-xl text-md p-1 md:p-2 lg:p-2 absolute bottom-3 mx-4 mt-2">
               Make Reservation
             </button>
           </div>
@@ -309,14 +309,14 @@ function Home() {
         </div>
         <div className="rounded-xl relative">
           <div className="font-sono absolute w-full h-full bg-black/60 rounded-3xl text-white shadow-lg shadow-gray-500">
-            <p className="text-bold text-3xl px-4 pt-6">French</p>
+            <p className="text-bold text-2xl px-4 pt-6 md:text-3xl lg:text-3xl">French</p>
             <p className="px-4">
-              <span className="font-bold">Address:</span> Agim Ramadani a2 10000
+              <span className="font-bold text-lg md:text-xl lg:text-xl">Address:</span> Agim Ramadani a2 10000
               Pristina, Kosovo
             </p>
             <button 
              onClick={() => makereserva("makereservation")}
-            className="bg-transparent text-white border border-white rounded-xl p-2 absolute bottom-3 mx-4">
+            className="bg-transparent text-white border border-white rounded-xl text-md p-1 md:p-2 lg:p-2 absolute bottom-3 mx-4 mt-2">
               Make Reservation
             </button>
           </div>
