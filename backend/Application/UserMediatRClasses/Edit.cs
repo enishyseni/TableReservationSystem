@@ -10,10 +10,9 @@ namespace Application.UserMediatRClasses
 {
     public class Edit
     {
-            public class Command : IRequest
+        public class Command : IRequest
         {
             public User User { get; set; }
-            public UserDTO UserdDTO { get; set; }
         }
 
         public class Handler : IRequestHandler<Command>
@@ -38,5 +37,5 @@ namespace Application.UserMediatRClasses
             }
         }
     }
-        
-    }
+
+}

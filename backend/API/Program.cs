@@ -44,9 +44,7 @@ builder.Services.AddMediatR(typeof(Application.ReservationMediatRClasses.List.Ha
 builder.Services.AddMediatR(typeof(Application.RestaurantMediatRClasses.List.Handler).Assembly);
 builder.Services.AddMediatR(typeof(Application.UserMediatRClasses.List.Handler).Assembly);
 
-builder.Services.AddAutoMapper(typeof(RestaurantMappingProfiles).Assembly);
-builder.Services.AddAutoMapper(typeof(ReservationMappingProfiles).Assembly);
-builder.Services.AddAutoMapper(typeof(UserMappingProfiles).Assembly);
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 
 

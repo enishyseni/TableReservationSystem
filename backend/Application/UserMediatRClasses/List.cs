@@ -10,7 +10,7 @@ namespace Application.UserMediatRClasses
 {
     public class List
     {
-     
+
         public class Query : IRequest<List<User>> { }
 
         public class Handler : IRequestHandler<Query, List<User>>
@@ -27,5 +27,5 @@ namespace Application.UserMediatRClasses
             }
         }
     }
-        
-    }
+
+}

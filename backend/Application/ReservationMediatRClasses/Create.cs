@@ -13,15 +13,14 @@ namespace Application.ReservationMediatRClasses
 {
     public class Create
     {
-        
-          public class Command : IRequest
+
+        public class Command : IRequest
         {
-           
-           public Reservation Reservation{get; set;}
-            public ReservationDTO ReservationDTO { get; set; }
+
+            public Reservation Reservation { get; set; }
         }
 
-        public class Handler :IRequestHandler<Command>
+        public class Handler : IRequestHandler<Command>
         {
             private readonly DataContext _context;
 
@@ -33,15 +32,15 @@ namespace Application.ReservationMediatRClasses
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
 
             {
-               _context.Reservations.Add(request.Reservation);
-               await _context.SaveChangesAsync();
+                _context.Reservations.Add(request.Reservation);
+                await _context.SaveChangesAsync();
 
-               return Unit.Value;
+                return Unit.Value;
 
             }
 
-            
 
-    }
+
+        }
     }
 }

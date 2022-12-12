@@ -17,7 +17,6 @@ namespace Application.ReservationMediatRClasses
         public class Command : IRequest
         {
             public Reservation Reservation { get; set; }
-            public ReservationDTO ReservationDTO { get; set; }
         }
         public class Handler : IRequestHandler<Command>
         {

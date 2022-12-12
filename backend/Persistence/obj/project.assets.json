@@ -3483,34 +3483,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "/Users/enishyseni/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "/Users/enishyseni/Documents/GitHub/TableReservationSystem/backend/Persistence/Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\Persistence.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Persistence\\obj\\",
+      "projectPath": "/Users/enishyseni/Documents/GitHub/TableReservationSystem/backend/Persistence/Persistence.csproj",
+      "packagesPath": "/Users/enishyseni/.nuget/packages/",
+      "outputPath": "/Users/enishyseni/Documents/GitHub/TableReservationSystem/backend/Persistence/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/enishyseni/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\TableReservationSystem\\backend\\Domain\\Domain.csproj"
+            "/Users/enishyseni/Documents/GitHub/TableReservationSystem/backend/Domain/Domain.csproj": {
+              "projectPath": "/Users/enishyseni/Documents/GitHub/TableReservationSystem/backend/Domain/Domain.csproj"
             }
           }
         }
@@ -3562,7 +3560,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }
