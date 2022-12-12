@@ -60,6 +60,167 @@ const RestaurantPanel = () => {
                                     <option className="font-poppins text-slate-600">Table 4</option>
                                     <option className="font-poppins text-slate-600">Table 5</option>
                                     <option className="font-poppins text-slate-600">Table 6</option>
+                                    <option className="font-poppins text-slate-600">Table 7</option>
+                                    <option className="font-poppins text-slate-600">Table 8</option>
+                                    <option className="font-poppins text-slate-600">Table 9</option>
+                                    <option className="font-poppins text-slate-600">Table 10</option>
+                                    <option className="font-poppins text-slate-600">Table 11</option>
+                                </select>
+                                </td>
+                                <td class="flex items-center py-4 px-6 space-x-3">
+                                    <button class="mr-2 font-medium text-blue-600 dark:text-blue-500">Approve</button>
+                                    <button class="font-medium text-red-600 dark:text-red-500">Decline</button>
+                                </td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    John Doe
+                                </th>
+                                <td class="py-4 px-6">
+                                    johndoe@gmail.com
+                                </td>
+                                <td class="py-4 px-6">
+                                    044111111
+                                </td>
+                                <td class="py-4 px-6">
+                                    5
+                                </td>
+                                <td class="py-4 px-6">
+                                    12:00
+                                </td>
+                                <td class="py-4 px-6">
+                                <select className="font-poppins text-gray-700  bg-transparent w-full focus:outline-none ml-1 dark:text-gray-400">
+                                    <option selected className="font-poppins text-slate-600 w-full">
+                                    Table 1
+                                    </option>
+                                    <option className="font-poppins text-slate-600">Table 2</option>
+                                    <option className="font-poppins text-slate-600">Table 3</option>
+                                    <option className="font-poppins text-slate-600">Table 4</option>
+                                    <option className="font-poppins text-slate-600">Table 5</option>
+                                    <option className="font-poppins text-slate-600">Table 6</option>
+                                    <option className="font-poppins text-slate-600">Table 7</option>
+                                    <option className="font-poppins text-slate-600">Table 8</option>
+                                    <option className="font-poppins text-slate-600">Table 9</option>
+                                    <option className="font-poppins text-slate-600">Table 10</option>
+                                    <option className="font-poppins text-slate-600">Table 11</option>
+                                </select>
+                                </td>
+                                <td class="flex items-center py-4 px-6 space-x-3">
+                                    <button class="mr-2 font-medium text-blue-600 dark:text-blue-500">Approve</button>
+                                    <button class="font-medium text-red-600 dark:text-red-500">Decline</button>
+                                </td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    John Doe
+                                </th>
+                                <td class="py-4 px-6">
+                                    johndoe@gmail.com
+                                </td>
+                                <td class="py-4 px-6">
+                                    044111111
+                                </td>
+                                <td class="py-4 px-6">
+                                    5
+                                </td>
+                                <td class="py-4 px-6">
+                                    12:00
+                                </td>
+                                <td class="py-4 px-6">
+                                <select className="font-poppins text-gray-700  bg-transparent w-full focus:outline-none ml-1 dark:text-gray-400">
+                                    <option selected className="font-poppins text-slate-600 w-full">
+                                    Table 1
+                                    </option>
+                                    <option className="font-poppins text-slate-600">Table 2</option>
+                                    <option className="font-poppins text-slate-600">Table 3</option>
+                                    <option className="font-poppins text-slate-600">Table 4</option>
+                                    <option className="font-poppins text-slate-600">Table 5</option>
+                                    <option className="font-poppins text-slate-600">Table 6</option>
+                                    <option className="font-poppins text-slate-600">Table 7</option>
+                                    <option className="font-poppins text-slate-600">Table 8</option>
+                                    <option className="font-poppins text-slate-600">Table 9</option>
+                                    <option className="font-poppins text-slate-600">Table 10</option>
+                                    <option className="font-poppins text-slate-600">Table 11</option>
+                                </select>
+                                </td>
+                                <td class="flex items-center py-4 px-6 space-x-3">
+                                    <button class="mr-2 font-medium text-blue-600 dark:text-blue-500">Approve</button>
+                                    <button class="font-medium text-red-600 dark:text-red-500">Decline</button>
+                                </td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    John Doe
+                                </th>
+                                <td class="py-4 px-6">
+                                    johndoe@gmail.com
+                                </td>
+                                <td class="py-4 px-6">
+                                    044111111
+                                </td>
+                                <td class="py-4 px-6">
+                                    5
+                                </td>
+                                <td class="py-4 px-6">
+                                    12:00
+                                </td>
+                                <td class="py-4 px-6">
+                                <select className="font-poppins text-gray-700  bg-transparent w-full focus:outline-none ml-1 dark:text-gray-400">
+                                    <option selected className="font-poppins text-slate-600 w-full">
+                                    Table 1
+                                    </option>
+                                    <option className="font-poppins text-slate-600">Table 2</option>
+                                    <option className="font-poppins text-slate-600">Table 3</option>
+                                    <option className="font-poppins text-slate-600">Table 4</option>
+                                    <option className="font-poppins text-slate-600">Table 5</option>
+                                    <option className="font-poppins text-slate-600">Table 6</option>
+                                    <option className="font-poppins text-slate-600">Table 7</option>
+                                    <option className="font-poppins text-slate-600">Table 8</option>
+                                    <option className="font-poppins text-slate-600">Table 9</option>
+                                    <option className="font-poppins text-slate-600">Table 10</option>
+                                    <option className="font-poppins text-slate-600">Table 11</option>
+                                </select>
+                                </td>
+                                <td class="flex items-center py-4 px-6 space-x-3">
+                                    <button class="mr-2 font-medium text-blue-600 dark:text-blue-500">Approve</button>
+                                    <button class="font-medium text-red-600 dark:text-red-500">Decline</button>
+                                </td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    John Doe
+                                </th>
+                                <td class="py-4 px-6">
+                                    johndoe@gmail.com
+                                </td>
+                                <td class="py-4 px-6">
+                                    044111111
+                                </td>
+                                <td class="py-4 px-6">
+                                    5
+                                </td>
+                                <td class="py-4 px-6">
+                                    12:00
+                                </td>
+                                <td class="py-4 px-6">
+                                <select className="font-poppins text-gray-700  bg-transparent w-full focus:outline-none ml-1 dark:text-gray-400">
+                                    <option selected className="font-poppins text-slate-600 w-full">
+                                    Table 1
+                                    </option>
+                                    <option className="font-poppins text-slate-600">Table 2</option>
+                                    <option className="font-poppins text-slate-600">Table 3</option>
+                                    <option className="font-poppins text-slate-600">Table 4</option>
+                                    <option className="font-poppins text-slate-600">Table 5</option>
+                                    <option className="font-poppins text-slate-600">Table 6</option>
+                                    <option className="font-poppins text-slate-600">Table 7</option>
+                                    <option className="font-poppins text-slate-600">Table 8</option>
+                                    <option className="font-poppins text-slate-600">Table 9</option>
+                                    <option className="font-poppins text-slate-600">Table 10</option>
+                                    <option className="font-poppins text-slate-600">Table 11</option>
                                 </select>
                                 </td>
                                 <td class="flex items-center py-4 px-6 space-x-3">
@@ -119,6 +280,48 @@ const RestaurantPanel = () => {
                                 </td>
                                 <td class="py-4 px-6">
                                     Table 2
+                                </td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    John Doe
+                                </th>
+                                <td class="py-4 px-6">
+                                    johndoe@gmail.com
+                                </td>
+                                <td class="py-4 px-6">
+                                    044111111
+                                </td>
+                                <td class="py-4 px-6">
+                                    7
+                                </td>
+                                <td class="py-4 px-6">
+                                    12:00
+                                </td>
+                                <td class="py-4 px-6">
+                                    Table 4
+                                </td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    John Doe
+                                </th>
+                                <td class="py-4 px-6">
+                                    johndoe@gmail.com
+                                </td>
+                                <td class="py-4 px-6">
+                                    044111111
+                                </td>
+                                <td class="py-4 px-6">
+                                    3
+                                </td>
+                                <td class="py-4 px-6">
+                                    12:00
+                                </td>
+                                <td class="py-4 px-6">
+                                    Table 3
                                 </td>
                             </tr>
                         </tbody>
