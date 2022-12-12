@@ -25,7 +25,6 @@ namespace API.Controllers
         }
 
       
-
         [HttpPost]
         public async Task<IActionResult> CreateRestaurantDTO(RestaurantDTO restaurantDto)
 

@@ -26,7 +26,12 @@ namespace Application.ReservationMediatRClasses
              }
             public async Task<Reservation> Handle(Query request, CancellationToken cancellationToken)
             {
-                return await _context.Reservations.FindAsync(request.Id);
+               // return await _context.Reservations.FindAsync(request.Id);
+               var Reservation = await _context.Reservations.FindAsync(request.Id);
+
+               if (Reservation == null) throw new Exception("Reservation not Found");
+
+               return Reservation;
             }
         }
     }

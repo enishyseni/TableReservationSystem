@@ -49,6 +49,12 @@ builder.Services.AddAutoMapper(typeof(ReservationMappingProfiles).Assembly);
 builder.Services.AddAutoMapper(typeof(UserMappingProfiles).Assembly);
 
 
+
+
+
+
+
+
 var app = builder.Build();
 
 var scopeFactory = app.Services.GetRequiredService<IServiceProvider>();
