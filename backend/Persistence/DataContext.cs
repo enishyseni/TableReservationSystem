@@ -12,6 +12,8 @@ namespace Persistence
 {
     public class DataContext : DbContext
     {
+        public object reservationDTO;
+
         public DataContext(DbContextOptions options) : base(options)
         {
         }

@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain;
 
 namespace Application.DTOs
@@ -24,6 +20,6 @@ namespace Application.DTOs
         public User User { get; set; }
 
         public Restaurant Restaurant { get; set; }
-        
+  
     }
 }

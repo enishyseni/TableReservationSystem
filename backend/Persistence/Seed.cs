@@ -6,13 +6,11 @@ using Domain;
 using Persistence;
 using Domain.Entities;
 
-
 namespace Persistence
 {
     public class Seed
     {
         public static async Task SeedData(DataContext context)
-
         {
             if (context.Reservations.Any())
                 return;
@@ -21,7 +19,6 @@ namespace Persistence
             {
                 new Reservation{
 
-                    
                     Name ="Sami",
                     PhoneNumber = 044444333,
                     Email = "SamiQorri@gmail.com",
@@ -29,9 +26,6 @@ namespace Persistence
                     NumberOfPersons = 4,
                     Status ="Restaurant",
                     Description ="dsaesasd",
-
-
-
                 },
                 new Reservation{
 
@@ -42,20 +36,10 @@ namespace Persistence
                     NumberOfPersons = 4,
                     Status= "CaffeBar",
                     Description ="dsaesasd",
-
-
-
                 }
-
-
             };
-
             await context.Reservations.AddRangeAsync(reservations);
             await context.SaveChangesAsync();
-
-
-
         }
-
     }
 }

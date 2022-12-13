@@ -1,9 +1,7 @@
-using System;
 using Application.DTOs;
 using Domain;
 using MediatR;
 using Persistence;
-using static Application.Activites.Delete;
 
 namespace Application.UserMediatRClasses
 {
@@ -11,12 +9,12 @@ namespace Application.UserMediatRClasses
     {
            public User User { get; set; }
 
-        public class Command : IRequest<object>
+        public class Command : IRequest
         {
             public User User { get; set; }
             public UserDTO UserDTO { get; set; }
         }
-    }
+    
 
         public class Handler : IRequestHandler<Command>
         {
@@ -28,7 +26,7 @@ namespace Application.UserMediatRClasses
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-             _context.Users.Add(request.User);
+                _context.Users.Add(request.User);
 
                 await _context.SaveChangesAsync();
 
@@ -36,5 +34,6 @@ namespace Application.UserMediatRClasses
             }
         }
     }
+}
         
     

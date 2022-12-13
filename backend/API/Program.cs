@@ -2,26 +2,26 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 using Application.Core;
+using FluentValidation.AspNetCore;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-<<<<<<< HEAD
 //obsolete
-//builder.Services.AddControllers().AddFluentValidation(config => 
-//{
-//    config.RegisterValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
-//});
+builder.Services.AddControllers().AddFluentValidation(config => 
+{
+    config.RegisterValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
+});
 
 //new methods instead of AddFluentValidation():
-builder.Services.AddFluentValidationAutoValidation();
-builder.Services.AddFluentValidationClientsideAdapters();
-builder.Services.AddValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
+//builder.Services.AddFluentValidationAutoValidation();
+//builder.Services.AddFluentValidationClientsideAdapters();
+//builder.Services.AddValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
 
-=======
 builder.Services.AddControllers();
->>>>>>> aaf168ae71ebd05796dc972272de64b4a7c13aa6
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

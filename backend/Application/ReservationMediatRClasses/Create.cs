@@ -2,25 +2,34 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Core;
 using Application.DTOs;
+using Application.Validators;
 using Domain;
+using FluentValidation;
 using MediatR;
 using Persistence;
-
 
 namespace Application.ReservationMediatRClasses
 {
     public class Create
     {
-        
-          public class Command : IRequest
+        public class Command : IRequest<Result<Unit>>
         {
-           
-           public Reservation Reservation{get; set;}
+            public Reservation Reservation { get; set; }
+
             public ReservationDTO ReservationDTO { get; set; }
         }
 
-        public class Handler :IRequestHandler<Command>
+        public class CommandValidator : AbstractValidator<Command>
+        {
+            public CommandValidator()
+            {
+                RuleFor(x => x.ReservationDTO).SetValidator(new ReservationValidator());
+            }
+        }
+
+        public class Handler : IRequestHandler<Command, Result<Unit>>
         {
             private readonly DataContext _context;
 
@@ -29,18 +38,16 @@ namespace Application.ReservationMediatRClasses
                 _context = context;
             }
 
-            public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
-
+            public async Task<Result<Unit>> Handle(Command request, CancellationToken cancellationToken)
             {
-               _context.Reservations.Add(request.Reservation);
-               await _context.SaveChangesAsync();
+                _context.Reservations.Add(request.Reservation);
 
-               return Unit.Value;
+                var result = await _context.SaveChangesAsync() > 0;
 
+                if(!result) return Result<Unit>.Failure("Failed to create activity");
+
+                return Result<Unit>.Success(Unit.Value);
             }
-
-            
-
-    }
+        }
     }
 }
