@@ -9,7 +9,6 @@ namespace Application.Core
         public UserMappingProfiles()
         {
             CreateMap<User, User>();
-            CreateMap<User, UserDTO>();
         }
     }
 }

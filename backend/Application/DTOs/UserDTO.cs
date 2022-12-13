@@ -4,7 +4,7 @@ namespace Application.DTOs
 {
     public class UserDTO : BaseDTO
     {
-         public string LastName { get; set; }
+        public string LastName { get; set; }
 
         public int PhoneNumber { get; set; }
 
@@ -12,7 +12,7 @@ namespace Application.DTOs
 
         public int Age { get; set; }
 
-        public virtual ICollection<Restaurant> Restaurants { get; set; } = new List<Restaurant>();
-        
+        public virtual ICollection<RestaurantDTO> Restaurants { get; set; } = new List<RestaurantDTO>();
+
     }
 }

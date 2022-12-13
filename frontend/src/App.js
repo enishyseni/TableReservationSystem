@@ -6,6 +6,7 @@ import Landing from './components/Landing';
 import Addrestaurant from './components/Addrestaurant';
 import Register from './components/Register';
 import MakeReservation from './components/MakeReservation';
+import RestaurantPanel from './components/RestaurantPanel';
 import {Routes, Route } from "react-router-dom"
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />  
       <Route path='/makereservation' element={<MakeReservation/>}/>
+      <Route path='/restaurantpanel' element={<RestaurantPanel/>}/>
     </Routes>
     </>
   );

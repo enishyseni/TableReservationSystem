@@ -5,14 +5,14 @@ namespace Application.DTOs
 {
     public class RestaurantDTO : BaseDTO
     {
-         public string Location { get; set; }
+        public string Location { get; set; }
 
         public string Type { get; set; }
-        
-        public string MainImage { get; set; }
-        public virtual ICollection<Media> Images { get; set; } = new List<Media>();
 
-        public virtual ICollection<User> Users { get; set; } = new List<User>();
-        
+        public string MainImage { get; set; }
+        public virtual ICollection<MediaDTO> Images { get; set; } = new List<MediaDTO>();
+
+        public virtual ICollection<UserDTO> Users { get; set; } = new List<UserDTO>();
+
     }
 }

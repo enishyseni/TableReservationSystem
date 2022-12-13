@@ -1,3 +1,6 @@
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 using Application.DTOs;
 using Domain;
 using MediatR;
@@ -7,14 +10,13 @@ namespace Application.UserMediatRClasses
 {
     public class Create
     {
-           public User User { get; set; }
+        public User User { get; set; }
 
         public class Command : IRequest
         {
             public User User { get; set; }
-            public UserDTO UserDTO { get; set; }
         }
-    
+
 
         public class Handler : IRequestHandler<Command>
         {
@@ -23,17 +25,14 @@ namespace Application.UserMediatRClasses
             {
                 _context = context;
             }
+                public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
+                {
+                    _context.Users.Add(request.User);
 
-            public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
-            {
-                _context.Users.Add(request.User);
+                    await _context.SaveChangesAsync();
 
-                await _context.SaveChangesAsync();
-
-                return Unit.Value;
+                    return Unit.Value;
+                }
             }
         }
     }
-}
-        
-    

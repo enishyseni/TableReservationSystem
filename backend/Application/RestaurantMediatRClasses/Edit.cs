@@ -1,6 +1,10 @@
+using System.Threading;
+using System.Threading.Tasks;
 using Application.DTOs;
+using Application.Validators;
 using AutoMapper;
 using Domain;
+using FluentValidation;
 using MediatR;
 using Persistence;
 
@@ -11,8 +15,18 @@ namespace Application.RestaurantMediatRClasses
         public class Command : IRequest
         {
             public Restaurant Restaurant { get; set; }
-            public RestaurantDTO RestaurantDTO { get; set; }
         }
+        // public class CommandValidator : AbstractValidator<Command>
+        // {
+        //     public CommandValidator()
+        //     {
+        //         RuleFor(x => x.RestaurantDTO).SetValidator(new RestaurantValidator());
+
+        //     }
+        // }
+
+
+
 
         public class Handler : IRequestHandler<Command>
         {

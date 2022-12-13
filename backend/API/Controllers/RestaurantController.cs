@@ -20,27 +20,26 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<RestaurantDTO>> GetRestaurant(Guid id)
         {
-            return Ok (await Mediator.Send(new Details.Query { Id = id }));
+            return Ok(await Mediator.Send(new Details.Query { Id = id }));
         }
 
-        [HttpPost("{add}")]
-        public async Task<IActionResult> CreateRestaurant(RestaurantDTO restaurantDto)
+        [HttpPost]
+        public async Task<IActionResult> CreateRestaurantDTO(RestaurantDTO restaurantDto)
         {
-            return Ok(await Mediator.Send(new Create.Command { RestaurantDTO = restaurantDto }));
+            return Ok(await Mediator.Send(new Create.Command { Restaurant = Mapper.Map<Restaurant>(restaurantDto) }));
         }
-
 
         [HttpPut("{id}")]
         public async Task<IActionResult> EditRestaurant(Guid id, RestaurantDTO restaurantDto)
         {
             restaurantDto.Id = id;
-            return Ok(await Mediator.Send(new Edit.Command { RestaurantDTO = restaurantDto }));
+            return Ok(await Mediator.Send(new Edit.Command { Restaurant = Mapper.Map<Restaurant>(restaurantDto) }));
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteRestaurant(Guid id)
         {
-            return Ok(await Mediator.Send(new Delete.Command {Id = id}));
+            return Ok(await Mediator.Send(new Delete.Command { Id = id }));
         }
     }
 }

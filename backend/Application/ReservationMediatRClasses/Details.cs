@@ -1,5 +1,8 @@
 using Application.Core;
 using Application.DTOs;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 using Domain;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -9,12 +12,12 @@ namespace Application.ReservationMediatRClasses
 {
     public class Details
     {
-        public class Query : IRequest<Result<Reservation>>
+        public class Query : IRequest<Reservation>
         {
             public Guid Id { get; set; }
         }
 
-        public class Handler : IRequestHandler<Query, Result<Reservation>>
+        public class Handler : IRequestHandler<Query, Reservation>
         {
             public readonly DataContext _context;
 
@@ -23,11 +26,13 @@ namespace Application.ReservationMediatRClasses
                 _context = context;
             }
 
-            public async Task<Result<Reservation>> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<Reservation> Handle(Query request, CancellationToken cancellationToken)
             {
-                var reservation = await _context.Reservations.FindAsync(request.Id);
+               var reservation = await _context.Reservations.FindAsync(request.Id);
 
-                return Result<Reservation>.Success(reservation);
+               if (reservation == null) throw new Exception("Reservation not Found");
+
+               return reservation;
             }
         }
     }

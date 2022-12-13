@@ -9,7 +9,6 @@ namespace Application.Core
         public RestaurantMappingProfiles()
         {
             CreateMap<Restaurant, Restaurant>();
-            CreateMap<Restaurant, RestaurantDTO>();
         }
     }
 }

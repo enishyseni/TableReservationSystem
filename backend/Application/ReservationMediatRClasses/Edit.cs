@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using Application.DTOs;
 using Application.Validators;
 using AutoMapper;
@@ -13,7 +18,6 @@ namespace Application.ReservationMediatRClasses
         public class Command : IRequest
         {
             public Reservation Reservation { get; set; }
-
             public ReservationDTO ReservationDTO { get; set; }
         }
 

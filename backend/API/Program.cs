@@ -4,6 +4,11 @@ using Persistence;
 using Application.Core;
 using FluentValidation.AspNetCore;
 using FluentValidation;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,9 +21,9 @@ builder.Services.AddControllers().AddFluentValidation(config =>
 });
 
 //new methods instead of AddFluentValidation():
-//builder.Services.AddFluentValidationAutoValidation();
-//builder.Services.AddFluentValidationClientsideAdapters();
-//builder.Services.AddValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+builder.Services.AddValidatorsFromAssemblyContaining<Application.ReservationMediatRClasses.Create>();
 
 builder.Services.AddControllers();
 
@@ -39,9 +44,12 @@ builder.Services.AddMediatR(typeof(Application.ReservationMediatRClasses.List.Ha
 builder.Services.AddMediatR(typeof(Application.RestaurantMediatRClasses.List.Handler).Assembly);
 builder.Services.AddMediatR(typeof(Application.UserMediatRClasses.List.Handler).Assembly);
 
-builder.Services.AddAutoMapper(typeof(RestaurantMappingProfiles).Assembly);
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+
 builder.Services.AddAutoMapper(typeof(ReservationMappingProfiles).Assembly);
+builder.Services.AddAutoMapper(typeof(RestaurantMappingProfiles).Assembly);
 builder.Services.AddAutoMapper(typeof(UserMappingProfiles).Assembly);
+
 
 
 var app = builder.Build();

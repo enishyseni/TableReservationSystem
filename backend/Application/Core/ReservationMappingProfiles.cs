@@ -9,7 +9,6 @@ namespace Application.Core
         public ReservationMappingProfiles()
         {
             CreateMap<Reservation, Reservation>();
-            CreateMap<Reservation, ReservationDTO>();
         }
     }
 }
