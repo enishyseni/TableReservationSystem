@@ -2,6 +2,7 @@ using Application.DTOs;
 using Application.UserMediatRClasses;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
+
 namespace API.Controllers
 {
     public class UserController : BaseApiController
