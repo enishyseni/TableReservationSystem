@@ -1,7 +1,4 @@
 using Application.Core;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using Domain;
 using MediatR;
 using Microsoft.EntityFrameworkCore;

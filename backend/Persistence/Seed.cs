@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain;
-using Persistence;
-using Domain.Entities;
 
 namespace Persistence
 {
@@ -27,6 +21,7 @@ namespace Persistence
                     Status ="Restaurant",
                     Description ="dsaesasd",
                 },
+
                 new Reservation{
 
                     Name ="Artin",

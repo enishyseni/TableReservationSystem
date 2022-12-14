@@ -1,6 +1,4 @@
-using System.Data;
 using Application.DTOs;
-using Domain;
 using FluentValidation;
 
 namespace Application.Validators

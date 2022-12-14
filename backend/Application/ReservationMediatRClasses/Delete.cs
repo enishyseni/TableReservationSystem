@@ -1,9 +1,4 @@
 using Application.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Domain;
 using MediatR;
 using Persistence;
@@ -36,7 +31,7 @@ namespace Application.Activites
 
                 var result = await _context.SaveChangesAsync() > 0;
 
-                if(!result) return Result<Unit>.Failure("Failed to delete the activity");
+                if(!result) return Result<Unit>.Failure("Failed to delete the reservation");
 
                 return Result<Unit>.Success(Unit.Value);
             }

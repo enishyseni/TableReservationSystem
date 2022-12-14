@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Application.Core;
 using Application.DTOs;
 using Application.Validators;
@@ -45,7 +40,7 @@ namespace Application.ReservationMediatRClasses
 
                 var result = await _context.SaveChangesAsync() > 0;
 
-                if(!result) return Result<Unit>.Failure("Failed to create activity");
+                if(!result) return Result<Unit>.Failure("Failed to create reservation");
 
                 return Result<Unit>.Success(Unit.Value);
             }

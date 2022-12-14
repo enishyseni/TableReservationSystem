@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
+using Application.Core;
 using Application.DTOs;
 using Application.Validators;
 using AutoMapper;
@@ -15,7 +11,7 @@ namespace Application.ReservationMediatRClasses
 {
     public class Edit
     {
-        public class Command : IRequest
+        public class Command : IRequest<Result<Unit>>
         {
             public Reservation Reservation { get; set; }
             public ReservationDTO ReservationDTO { get; set; }
@@ -29,7 +25,7 @@ namespace Application.ReservationMediatRClasses
             }
         }
 
-        public class Handler : IRequestHandler<Command>
+        public class Handler : IRequestHandler<Command, Result<Unit>>
         {
             private readonly DataContext _context;
 
@@ -41,19 +37,19 @@ namespace Application.ReservationMediatRClasses
                 _context = context;
             }
 
-            public async Task<Unit>
-            Handle(Command request, CancellationToken cancellationToken)
+            public async Task<Result<Unit>> Handle(Command request, CancellationToken cancellationToken)
             {
-                var reservation =
-                    await _context
-                        .Reservations
-                        .FindAsync(request.Reservation.Id);
+                var reservation = await _context.Reservations.FindAsync(request.Reservation.Id);
+
+                if(reservation == null) return null;
 
                 _mapper.Map(request.Reservation, reservation);
 
-                await _context.SaveChangesAsync();
+                var result = await _context.SaveChangesAsync() > 0;
 
-                return Unit.Value;
+                if(!result) return Result<Unit>.Failure("Failed to update reservation");
+
+                return Result<Unit>.Success(Unit.Value);
             }
         }
     }
