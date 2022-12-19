@@ -4,6 +4,7 @@ using Persistence;
 using Application.Core;
 using FluentValidation.AspNetCore;
 using FluentValidation;
+using API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -53,10 +54,13 @@ using (var scope = scopeFactory.CreateScope())
     await Seed.SeedData(context);
 }
 
+ 
+app.UseMiddleware<ExceptionMiddleware>();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage();//e kom shtu vet
+    //app.UseDeveloperExceptionPage();//e kom shtu vet
     app.UseSwagger();
     app.UseSwaggerUI();
 }
@@ -68,3 +72,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+

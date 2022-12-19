@@ -1,46 +1,55 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.DTOs;
-using Application.RestaurantMediatRClasses;
-using Domain;
 using Microsoft.AspNetCore.Mvc;
+using Application.ReservationMediatRClasses;
+using Application.Activites;
+using Application.DTOs;
+using Domain;
 
 namespace API.Controllers
 {
     public class RestaurantController : BaseApiController
     {
         [HttpGet]
-        public async Task<ActionResult<List<RestaurantDTO>>> GetRestaurant()
+        public async Task<IActionResult> GetRestaurant()
         {
-            return Ok(await Mediator.Send(new List.Query()));
+            var result = Mapper.Map<List<RestaurantDTO>>(HandleResult(await Mediator.Send(new List.Query())));
+
+            return(IActionResult)result;
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<RestaurantDTO>> GetRestaurant(Guid id)
+    
+        public async Task<IActionResult> GetRestaurant(Guid id)
         {
-            return Ok(await Mediator.Send(new Details.Query { Id = id }));
+            var result = Mapper.Map<RestaurantDTO>(HandleResult(await Mediator.Send(new Details.Query{Id = id})));
+             
+            return(IActionResult)result;
         }
+
+
 
         [HttpPost]
-        public async Task<IActionResult> CreateRestaurantDTO(RestaurantDTO restaurantDto)
-        {
-            return Ok(await Mediator.Send(new Create.Command { Restaurant = Mapper.Map<Restaurant>(restaurantDto) }));
-        }
+
+         public async Task<IActionResult> CreateRestaurant(RestaurantDTO restaurantDto)
+         {
+            return HandleResult(await Mediator.Send(new Create.Command { RestaurantDTO = restaurantDto}));
+
+         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> EditRestaurant(Guid id, RestaurantDTO restaurantDto)
-        {
+        
+         public async Task <IActionResult> EditRestaurant(Guid id, RestaurantDTO restaurantDto)
+         {
             restaurantDto.Id = id;
-            return Ok(await Mediator.Send(new Edit.Command { Restaurant = Mapper.Map<Restaurant>(restaurantDto) }));
-        }
+            
+            return HandleResult(await Mediator.Send(new Edit.Command { Restaurant = Mapper.Map<Restaurant>}(restaurantDTO)));
+         }
+                
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRestaurant(Guid id)
-        {
-            return Ok(await Mediator.Send(new Delete.Command { Id = id }));
-        }
+         public async Task<IActionResult> DeleteRestaurant(Guid id)
+         {
+            return HandleResult(await Mediator.Send(new Delete.Command{Id = id}));
+         }
     }
 }
 
