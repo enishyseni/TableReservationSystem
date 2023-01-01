@@ -15,7 +15,5 @@ namespace Application.DTOs
         public DateTime DateDeleted { get; set; }
 
         public Guid DeletedBy { get; set; }
-
-
     }
 }

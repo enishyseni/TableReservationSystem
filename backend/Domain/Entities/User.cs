@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Domain
 {
     public class User : Base
@@ -11,6 +9,10 @@ namespace Domain
         public string Email { get; set; }
 
         public int Age { get; set; }
+
+        public byte[] PasswordHash { get; set; }
+
+        public byte[] PasswordSalt { get; set; }
 
         public virtual ICollection<Restaurant> Restaurants { get; set; } = new List<Restaurant>();
     }

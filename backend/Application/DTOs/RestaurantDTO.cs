@@ -1,6 +1,3 @@
-using Domain;
-using Domain.Entities;
-
 namespace Application.DTOs
 {
     public class RestaurantDTO : BaseDTO
@@ -13,6 +10,5 @@ namespace Application.DTOs
         public virtual ICollection<MediaDTO> Images { get; set; } = new List<MediaDTO>();
 
         public virtual ICollection<UserDTO> Users { get; set; } = new List<UserDTO>();
-
     }
 }
