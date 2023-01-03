@@ -260,7 +260,6 @@ namespace Persistence.Migrations
                 {
                     b.Navigation("Images");
                 });
-#pragma warning restore 612, 618
         }
     }
 }
