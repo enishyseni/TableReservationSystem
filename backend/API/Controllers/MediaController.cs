@@ -1,3 +1,4 @@
+using Application.DTOs;
 using Application.MediaMediatRClasses;
 using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -13,22 +14,22 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Media>> GetMedia(Guid id)
+        public async Task<ActionResult<MediaDTO>> GetMedia(Guid id)
         {
-            return await Mediator.Send(new Details.Query { Id = id });
+            return Ok(await Mediator.Send(new Details.Query { Id = id }));
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateMedia(Media media)
+        public async Task<IActionResult> CreateMedia(MediaDTO mediaDto)
         {
-            return Ok(await Mediator.Send(new Create.Command { Media = media }));
+            return Ok(await Mediator.Send(new Create.Command { Media = Mapper.Map<Media>(mediaDto) }));
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> EditMedia(Guid id, Media media)
+        public async Task<IActionResult> EditMedia(Guid id, MediaDTO mediaDto)
         {
-            media.Id = id;
-            return Ok(await Mediator.Send(new Edit.Command { Media = media }));
+            mediaDto.Id = id;
+            return Ok(await Mediator.Send(new Edit.Command { Media = Mapper.Map<Media>(mediaDto) }));
         }
 
         [HttpDelete("{id}")]

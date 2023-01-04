@@ -5,6 +5,9 @@ using Application.Core;
 using FluentValidation.AspNetCore;
 using FluentValidation;
 using API.Middleware;
+using Application.DTOs;
+using System.Text.Json.Nodes;
+using Newtonsoft.Json;
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -56,6 +59,8 @@ builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 var app = builder.Build();
 
+//UserDTO ObjectName = JsonConvert.DeserializeObject < UserDTO > (jsonString);
+
 var scopeFactory = app.Services.GetRequiredService<IServiceProvider>();
 
 using (var scope = scopeFactory.CreateScope())
@@ -65,7 +70,6 @@ using (var scope = scopeFactory.CreateScope())
     await Seed.SeedData(context);
 }
 
- 
 app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
