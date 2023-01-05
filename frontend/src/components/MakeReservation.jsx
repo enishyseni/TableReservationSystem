@@ -116,31 +116,31 @@ const Reservation = () => {
             <tbody className="md:text-lg font-sono ">
               <tr className="">
                 <td>Monday</td>
-                <td>07:00 Am - 22:30 PM</td>
+                <td>07:00 - 22:30</td>
               </tr>
               <tr>
                 <td>Tuesday</td>
-                <td>07:00 Am - 22:30 PM</td>
+                <td>07:00 - 22:30</td>
               </tr>
               <tr>
                 <td>Wednesday</td>
-                <td>07:00 Am - 22:30 PM</td>
+                <td>07:00 - 22:30</td>
               </tr>
               <tr>
                 <td>Thursday</td>
-                <td>07:00 Am - 22:30 PM</td>
+                <td>07:00 - 22:30</td>
               </tr>
               <tr>
                 <td>Friday</td>
-                <td>07:00 Am - 22:30 PM</td>
+                <td>07:00 - 22:30</td>
               </tr>
               <tr>
                 <td className="">Saturday</td>
-                <td>08:00 Am - 22:30 PM</td>
+                <td>08:00 - 22:30</td>
               </tr>
               <tr>
                 <td>Sunday</td>
-                <td>09:00 Am - 05:00 PM</td>
+                <td>09:00 - 05:00</td>
               </tr>
             </tbody>
           </table>
